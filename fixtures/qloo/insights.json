@@ -9,7 +9,7 @@
     ],
     "popularity": 0.78,
     "properties": {
-     "active_since": 1963
+     "start_year": 1963
     },
     "tags": [
      {
@@ -46,7 +46,7 @@
     ],
     "popularity": 0.92,
     "properties": {
-     "active_since": 1955
+     "start_year": 1955
     },
     "tags": [
      {
@@ -83,7 +83,7 @@
     ],
     "popularity": 0.55,
     "properties": {
-     "active_since": 1957
+     "start_year": 1957
     },
     "tags": [
      {
@@ -111,7 +111,7 @@
     ],
     "popularity": 0.7,
     "properties": {
-     "active_since": 1958
+     "start_year": 1958
     },
     "tags": [
      {
@@ -148,7 +148,7 @@
     ],
     "popularity": 0.9,
     "properties": {
-     "active_since": 1956
+     "start_year": 1956
     },
     "tags": [
      {
@@ -185,7 +185,7 @@
     ],
     "popularity": 0.78,
     "properties": {
-     "active_since": 1975
+     "start_year": 1975
     },
     "tags": [
      {
@@ -213,7 +213,7 @@
     ],
     "popularity": 0.66,
     "properties": {
-     "active_since": 1969
+     "start_year": 1969
     },
     "tags": [
      {
@@ -246,7 +246,7 @@
     ],
     "popularity": 0.45,
     "properties": {
-     "active_since": 1936
+     "start_year": 1936
     },
     "tags": [
      {
@@ -274,7 +274,7 @@
     ],
     "popularity": 0.5,
     "properties": {
-     "active_since": 1965
+     "start_year": 1965
     },
     "tags": [
      {
@@ -1299,7 +1299,7 @@
     ],
     "popularity": 0.96,
     "properties": {
-     "active_since": 1964
+     "start_year": 1964
     },
     "tags": [
      {
@@ -1336,7 +1336,7 @@
     ],
     "popularity": 0.7,
     "properties": {
-     "active_since": 1971
+     "start_year": 1971
     },
     "tags": [
      {
@@ -1373,7 +1373,7 @@
     ],
     "popularity": 0.78,
     "properties": {
-     "active_since": 1964
+     "start_year": 1964
     },
     "tags": [
      {
@@ -1410,7 +1410,7 @@
     ],
     "popularity": 0.82,
     "properties": {
-     "active_since": 1975
+     "start_year": 1975
     },
     "tags": [
      {
@@ -1447,7 +1447,7 @@
     ],
     "popularity": 0.72,
     "properties": {
-     "active_since": 1971
+     "start_year": 1971
     },
     "tags": [
      {
@@ -1475,7 +1475,7 @@
     ],
     "popularity": 0.8,
     "properties": {
-     "active_since": 1978
+     "start_year": 1978
     },
     "tags": [
      {
@@ -1503,7 +1503,7 @@
     ],
     "popularity": 0.84,
     "properties": {
-     "active_since": 1964
+     "start_year": 1964
     },
     "tags": [
      {
@@ -1531,7 +1531,7 @@
     ],
     "popularity": 0.86,
     "properties": {
-     "active_since": 1978
+     "start_year": 1978
     },
     "tags": [
      {
@@ -1564,7 +1564,7 @@
     ],
     "popularity": 0.6,
     "properties": {
-     "active_since": 1981
+     "start_year": 1981
     },
     "tags": [
      {
@@ -2478,7 +2478,7 @@
     ],
     "popularity": 0.6,
     "properties": {
-     "active_since": 1927
+     "start_year": 1927
     },
     "tags": [
      {
@@ -2515,7 +2515,7 @@
     ],
     "popularity": 0.93,
     "properties": {
-     "active_since": 1956
+     "start_year": 1956
     },
     "tags": [
      {
@@ -2552,7 +2552,7 @@
     ],
     "popularity": 0.94,
     "properties": {
-     "active_since": 1959
+     "start_year": 1959
     },
     "tags": [
      {
@@ -2585,7 +2585,7 @@
     ],
     "popularity": 0.75,
     "properties": {
-     "active_since": 1951
+     "start_year": 1951
     },
     "tags": [
      {
@@ -2622,7 +2622,7 @@
     ],
     "popularity": 0.55,
     "properties": {
-     "active_since": 1948
+     "start_year": 1948
     },
     "tags": [
      {
@@ -2659,7 +2659,7 @@
     ],
     "popularity": 0.55,
     "properties": {
-     "active_since": 1938
+     "start_year": 1938
     },
     "tags": [
      {
@@ -2687,7 +2687,7 @@
     ],
     "popularity": 0.5,
     "properties": {
-     "active_since": 1950
+     "start_year": 1950
     },
     "tags": [
      {
@@ -2720,7 +2720,7 @@
     ],
     "popularity": 0.8,
     "properties": {
-     "active_since": 1960
+     "start_year": 1960
     },
     "tags": [
      {
@@ -2748,7 +2748,7 @@
     ],
     "popularity": 0.78,
     "properties": {
-     "active_since": 1955
+     "start_year": 1955
     },
     "tags": [
      {
@@ -3673,7 +3673,7 @@
     ],
     "popularity": 0.92,
     "properties": {
-     "active_since": 1955
+     "start_year": 1955
     },
     "tags": [
      {
@@ -3700,7 +3700,7 @@
     ],
     "popularity": 0.9,
     "properties": {
-     "active_since": 1956
+     "start_year": 1956
     },
     "tags": [
      {
@@ -3727,7 +3727,7 @@
     ],
     "popularity": 0.93,
     "properties": {
-     "active_since": 1956
+     "start_year": 1956
     },
     "tags": [
      {
@@ -3754,7 +3754,7 @@
     ],
     "popularity": 0.84,
     "properties": {
-     "active_since": 1964
+     "start_year": 1964
     },
     "tags": [
      {
@@ -3776,7 +3776,7 @@
     ],
     "popularity": 0.75,
     "properties": {
-     "active_since": 1951
+     "start_year": 1951
     },
     "tags": [
      {
@@ -3803,7 +3803,7 @@
     ],
     "popularity": 0.94,
     "properties": {
-     "active_since": 1959
+     "start_year": 1959
     },
     "tags": [
      {
@@ -3830,7 +3830,7 @@
     ],
     "popularity": 0.8,
     "properties": {
-     "active_since": 1960
+     "start_year": 1960
     },
     "tags": [
      {
@@ -3852,7 +3852,7 @@
     ],
     "popularity": 0.82,
     "properties": {
-     "active_since": 1975
+     "start_year": 1975
     },
     "tags": [
      {

@@ -23,11 +23,11 @@ export function findViolations(s: RunState): Fix[] {
 
   const venueExclude: string[] = [];
   const venueReasons: string[] = [];
-  if ((faith === "faith" || guests === "older") && venues.some((v) => hasBarTag(v.tags))) {
+  if ((faith === "faith" || guests === "older") && venues.some((v) => hasBarTag(v))) {
     venueExclude.push(...BAR_TAG_IDS);
     venueReasons.push(faith === "faith" ? "a bar is not right for a faith-based service" : "a bar is not right for many older guests");
   }
-  if (guests === "older" && venues.some((v) => hasActiveTag(v.tags))) {
+  if (guests === "older" && venues.some((v) => hasActiveTag(v))) {
     venueExclude.push(...ACTIVE_TAG_IDS);
     venueReasons.push("hiking and rooftop places are hard for walkers");
   }
@@ -44,6 +44,22 @@ export function findViolations(s: RunState): Fix[] {
   if (budget === "modest" && food.some((f) => price(f) > 2)) { priceMax = 2; reasons.push("the budget is modest"); }
   if (reasons.length) fixes.push({ section: "food", reason: `Changed the food. ${reasons.map(cap).join(". ")}.`, exclude: [], priceMax, ratingMin });
   return fixes;
+}
+
+/** Belt and braces: drop anything that still breaks a rule after the filtered query. Keeps the list if nothing would be left. */
+function enforce(s: RunState, fix: Fix) {
+  const list = s.recs[fix.section] ?? [];
+  const bad = (i: Item) => {
+    if (fix.section === "venue") {
+      if (fix.exclude.some((id) => BAR_TAG_IDS.includes(id)) && hasBarTag(i)) return true;
+      if (fix.exclude.some((id) => ACTIVE_TAG_IDS.includes(id)) && hasActiveTag(i)) return true;
+    }
+    if (fix.priceMax && i.properties && (i.properties as any).price_level > fix.priceMax) return true;
+    if (fix.ratingMin && (i.properties as any)?.business_rating < fix.ratingMin) return true;
+    return false;
+  };
+  const kept = list.filter((i) => !bad(i));
+  if (kept.length) s.recs[fix.section] = kept;
 }
 
 /** Re-run the Qloo call with filters and rewrite the section. Runs once. */
@@ -74,6 +90,7 @@ export async function critique(s: RunState, exec: Exec): Promise<void> {
       s.notes.push(`We could not find a better ${fix.section === "venue" ? "gathering place" : "food option"} that fits every wish. Please check the list.`);
       continue;
     }
+    enforce(s, fix);
     await exec(writeCall(s, fix.section), "critique", fix.reason);
     s.notes.push(fix.reason);
   }

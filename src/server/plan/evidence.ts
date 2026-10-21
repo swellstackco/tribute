@@ -1,6 +1,7 @@
 import type { Item } from "../tools/index.js";
 import type { PickWhy } from "../../shared/types.js";
 import { resolvedEntities, type RunState } from "../agent/state.js";
+import { cuisineLoveText } from "../agent/picks.js";
 
 /** Names of the loves that were used as Qloo signals, keyed by entity id. */
 export function signalNames(s: RunState): Map<string, string> {
@@ -13,6 +14,7 @@ export function signalNames(s: RunState): Map<string, string> {
 export function tagLoveText(s: RunState): Map<string, string> {
   const m = new Map<string, string>();
   for (const [text, l] of Object.entries(s.love)) if (l.state === "tag") m.set(l.item.id, text);
+  for (const [id, text] of cuisineLoveText(s)) m.set(id, text);
   return m;
 }
 

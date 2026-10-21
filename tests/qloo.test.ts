@@ -34,7 +34,7 @@ describe("real client query strings (10 request kinds)", () => {
       {
         "books": "/v2/insights?filter.type=urn:entity:book&signal.interests.entities=11111111-1111-4111-8111-111111111111&take=8",
         "demographics": "/v2/insights?filter.type=urn:demographics&signal.interests.entities=11111111-1111-4111-8111-111111111111,22222222-2222-4222-8222-222222222222",
-        "entities": "/entities?ids=11111111-1111-4111-8111-111111111111,22222222-2222-4222-8222-222222222222",
+        "entities": "/entities?entity_ids=11111111-1111-4111-8111-111111111111,22222222-2222-4222-8222-222222222222",
         "era": "/v2/insights?filter.type=urn:tag&signal.interests.entities=11111111-1111-4111-8111-111111111111,22222222-2222-4222-8222-222222222222&filter.tag.types=urn:tag:genre:media,urn:tag:keyword:media,urn:tag:style:qloo&take=25",
         "food": "/v2/insights?filter.type=urn:entity:place&signal.interests.entities=11111111-1111-4111-8111-111111111111&filter.location.query=Bakersfield,%20CA&filter.tags=urn:tag:cuisine:place:mexican&filter.price_level.max=2&filter.properties.business_rating.min=3.5&take=8",
         "music": "/v2/insights?filter.type=urn:entity:artist&signal.interests.entities=11111111-1111-4111-8111-111111111111,22222222-2222-4222-8222-222222222222&take=12&feature.explainability=true",
@@ -69,7 +69,7 @@ describe("real client behavior", () => {
     expect(err).toBeInstanceOf(QlooError);
     expect(err.code).toBe("QLOO_RATE_LIMIT");
     expect(err.retryable).toBe(true);
-    expect(f).toHaveBeenCalledTimes(3);
+    expect(f).toHaveBeenCalledTimes(4);
   });
   it("sends the key header and maps 401 to QLOO_AUTH", async () => {
     const f = vi.fn(async () => new Response("{}", { status: 401 }));

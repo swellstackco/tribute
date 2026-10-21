@@ -10,7 +10,7 @@ import type { SectionName } from "../tools/index.js";
 const joinAnd = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs.at(-1)}`);
 
 export function plannerSentence(section: SectionName, s: RunState): string {
-  const a = (xs: { name: string }[], i: number) => xs[i]?.name;
+  const a = (xs: { name: string }[], i: number) => xs[i]?.name.split(/[:(]/)[0].trim();
   switch (section) {
     case "music": {
       const m = musicIds(s);
@@ -25,17 +25,17 @@ export function plannerSentence(section: SectionName, s: RunState): string {
     case "food": {
       const c = cuisineTags(s)[0];
       const p = foodItems(s).find((i) => i.kind === "entity");
-      return c && p ? `Food that tastes like {name}: ${c.name.toLowerCase()}. ${p.name} is close by.` : p ? `Food that tastes like home. ${p.name} is close by.` : "Food that tastes like home.";
+      return c && p ? `Food that tastes like {name}: ${c.name.toLowerCase()}. ${p.name.split(/[:(]/)[0].trim()} is close by.` : p ? `Food that tastes like home. ${p.name.split(/[:(]/)[0].trim()} is close by.` : "Food that tastes like home.";
     }
     case "venue": {
       const v = venueItems(s)[0];
-      return v ? `A warm place to gather in ${s.input.city}. ${v.name} is a good place to start.` : `A warm place to gather in ${s.input.city}.`;
+      return v ? `A warm place to gather in ${s.input.city}. ${v.name.split(/[:(]/)[0].trim()} is a good place to start.` : `A warm place to gather in ${s.input.city}.`;
     }
     case "screen": {
       const eras = erasFrom(allEraItems(s));
       const m = screenItems(s)[0];
       const era = eras.length ? `Look for photos from the ${joinAnd(eras.map((e) => `${e}s`))}.` : "Look for photos from the happy years.";
-      return m ? `${era} ${m.name} is a fun one to show.` : era;
+      return m ? `${era} ${m.name.split(/[:(]/)[0].trim()} is a fun one to show.` : era;
     }
     case "program":
       return "A simple order of service, with the music and readings in place.";

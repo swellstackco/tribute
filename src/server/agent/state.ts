@@ -26,6 +26,9 @@ export interface RunState {
   notes: string[];
   critiqued: boolean;
   programNotes: string[];
+  tagQueryLove: Record<string, string>;
+  cuisineQueries: Record<string, string>; // cuisine word -> the love that pointed to it
+  foodRetried: boolean;
 }
 
 export function newRunState(input: RunInput, ctx: ToolContext): RunState {
@@ -33,7 +36,7 @@ export function newRunState(input: RunInput, ctx: ToolContext): RunState {
   for (const l of input.loves) love[l] = { state: "pending" };
   return {
     input, ctx, steps: [], love, described: false, tagsDone: false, tagLookups: {}, question: null, answered: false,
-    redescribed: false, tagProfile: null, audience: null, recs: {}, recAttempted: new Set(), notes: [], critiqued: false, programNotes: [],
+    redescribed: false, tagProfile: null, audience: null, recs: {}, recAttempted: new Set(), notes: [], critiqued: false, programNotes: [], tagQueryLove: {}, cuisineQueries: {}, foodRetried: false,
   };
 }
 

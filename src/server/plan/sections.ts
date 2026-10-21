@@ -9,7 +9,7 @@ import { appleLink, mapLink, spotifyLink } from "./links.js";
 const short = (t: string) => t.replace("urn:entity:", "");
 
 function pickType(i: Item): string {
-  if (i.kind === "tag") return i.id.includes(":cuisine:") ? "cuisine" : "tag";
+  if (i.kind === "tag") return /:(cuisine|genre:place:restaurant):/.test(i.id) ? "cuisine" : "tag";
   return short(i.type);
 }
 
@@ -18,14 +18,26 @@ function detailFor(i: Item): string | undefined {
   switch (pickType(i)) {
     case "book": return [p.author ? `by ${p.author}` : "", p.publication_year ?? ""].filter(Boolean).join(", ");
     case "movie": case "tv_show": return p.release_year ? String(p.release_year) : undefined;
-    case "place": return [p.address, priceSigns(p.price_level), p.business_rating ? `${p.business_rating} stars` : ""].filter(Boolean).join(" · ");
-    case "artist": return p.active_since ? `Making music since ${p.active_since}` : undefined;
+    case "place": return [p.address, priceSigns(p.price_level), p.business_rating ? `${Number(p.business_rating).toFixed(1)} stars` : ""].filter(Boolean).join(" · ");
+    case "artist": return (p.start_year ?? p.active_since) ? `Making music since ${p.start_year ?? p.active_since}` : undefined;
     case "cuisine": return "The kind of food they loved";
     default: return undefined;
   }
 }
 
-const SUBSET = ["address", "business_rating", "price_level", "phone", "website", "publication_year", "release_year", "author", "active_since", "image"];
+// Tag chips: skip plumbing (parking, payment, service types) and repeats; keep the ones that describe taste.
+const PLUMBING = /^urn:tag:(amenity|parking|recycling|payment|accessibility|dining_options|service_type|activity_type|customer_identity|crowd|offerings|from_the_business|planning|highlights):/;
+function chips(i: Item): Array<{ id: string; name: string }> {
+  const seen = new Set<string>();
+  return i.tags.filter((t) => {
+    const key = (t.name ?? t.id).toLowerCase();
+    if (seen.has(key) || PLUMBING.test(t.id) || /^(Event venue|Caterer|Restaurant)$/.test(t.name)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 3);
+}
+
+const SUBSET = ["address", "business_rating", "price_level", "phone", "website", "publication_year", "release_year", "author", "active_since", "start_year", "image"];
 
 export function toPick(i: Item, s: RunState, extra: { affinity?: number; group?: string } = {}): Pick {
   const names = signalNames(s);
@@ -40,7 +52,7 @@ export function toPick(i: Item, s: RunState, extra: { affinity?: number; group?:
   return {
     id: i.id, name: i.name, type, kind: i.kind, ...(affinity !== undefined ? { affinity } : {}),
     detail: detailFor(i), properties: props, links, why: whyFor(i, s),
-    tags: i.tags.filter((t) => !/^(Event venue|Caterer|Restaurant)$/.test(t.name)).slice(0, 3),
+    tags: chips(i),
     mentioned: names.has(i.id) || tagLoves.has(i.id), ...(extra.group ? { group: extra.group } : {}),
   };
 }
@@ -112,7 +124,7 @@ export function buildLoves(s: RunState): PlanLove[] {
   return s.input.loves.map((text) => {
     const l = s.love[text];
     if (l?.state === "item") return { text, resolved: { id: l.item.id, name: l.item.name, type: short(l.item.type), popularity: l.item.popularity, kind: "entity" as const } };
-    if (l?.state === "tag") return { text, resolved: { id: l.item.id, name: l.item.name, type: l.item.id.includes(":cuisine:") ? "cuisine" : "tag", kind: "tag" as const } };
+    if (l?.state === "tag") return { text, resolved: { id: l.item.id, name: l.item.name, type: /:(cuisine|genre:place:restaurant):/.test(l.item.id) ? "cuisine" : "tag", kind: "tag" as const } };
     return { text, resolved: null };
   });
 }

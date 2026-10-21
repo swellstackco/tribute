@@ -17,7 +17,7 @@ export class RealQlooClient implements QlooClient {
   private o: Required<Omit<RealOptions, "cache">> & { cache?: QlooCache };
   constructor(o: RealOptions) {
     this.o = {
-      timeoutMs: 8000, retries: 2, fetchImpl: fetch,
+      timeoutMs: 8000, retries: 3, fetchImpl: fetch,
       sleep: (ms) => new Promise((r) => setTimeout(r, ms)), ...o,
     };
   }
@@ -36,14 +36,16 @@ export class RealQlooClient implements QlooClient {
     if (hit !== undefined) return hit;
     const url = `${this.o.baseUrl}${this.buildUrl(path, clean)}`;
     let last: QlooError | undefined;
+    let retryAfterMs: number | undefined;
     for (let attempt = 0; attempt <= this.o.retries; attempt++) {
-      if (attempt > 0) await this.o.sleep(Math.round(250 * 2 ** (attempt - 1) * (0.75 + Math.random() * 0.5)));
+      if (attempt > 0) await this.o.sleep(Math.min(5000, retryAfterMs ?? Math.round(400 * 2 ** (attempt - 1) * (0.75 + Math.random() * 0.5))));
+      retryAfterMs = undefined;
       const ctl = new AbortController();
       const timer = setTimeout(() => ctl.abort(), this.o.timeoutMs);
       try {
         const res = await this.o.fetchImpl(url, { headers: { "X-Api-Key": this.o.apiKey, accept: "application/json" }, signal: ctl.signal });
         if (res.status === 401 || res.status === 403) throw new QlooError("QLOO_AUTH", "Qloo rejected the key", false, res.status);
-        if (res.status === 429) { last = new QlooError("QLOO_RATE_LIMIT", "Qloo rate limit", true, 429); continue; }
+        if (res.status === 429) { last = new QlooError("QLOO_RATE_LIMIT", "Qloo rate limit", true, 429); const ra = Number(res.headers.get("retry-after")); if (Number.isFinite(ra) && ra > 0) retryAfterMs = ra * 1000; continue; }
         if (res.status >= 500) { last = new QlooError("QLOO_UPSTREAM", `Qloo error ${res.status}`, true, res.status); continue; }
         if (res.status !== 200) throw new QlooError("QLOO_UPSTREAM", `Qloo returned ${res.status}`, false, res.status);
         const body = await res.json();
@@ -95,7 +97,7 @@ export class RealQlooClient implements QlooClient {
     return (body?.results ?? {}) as InsightsResult;
   }
   async entities(ids: string[]): Promise<SearchResult[]> {
-    const body = await this.get("/entities", { ids });
+    const body = await this.get("/entities", { entity_ids: ids });
     return (body?.results ?? body?.entities ?? []) as SearchResult[];
   }
   cacheSize() { return this.o.cache?.size() ?? 0; }

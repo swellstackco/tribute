@@ -15,6 +15,7 @@ import { MockQlooClient } from "../src/server/qloo/mock.js";
 import { RealQlooClient } from "../src/server/qloo/real.js";
 import type { Params } from "../src/server/qloo/types.js";
 import { EXAMPLES } from "../src/shared/examples.js";
+import { CUISINE_PREF, VENUE_PREF, pickTag } from "../src/server/tools/clean.js";
 
 type Raw = { status: number; body: any; ms: number; url: string };
 type Fetcher = (path: string, params: Params) => Promise<Raw>;
@@ -44,7 +45,7 @@ if (useMock) {
 // ---- expected field names (from src/server/qloo/types.ts and SPEC section 4) ----
 const EXPECT = {
   search: ["name", "entity_id", "types", "popularity", "properties", "tags"],
-  entity: ["name", "entity_id", "types", "popularity", "properties", "tags", "query", "subtype"],
+  entity: ["name", "entity_id", "type", "subtype", "popularity", "properties", "tags", "query"],
   tagInsight: ["tag_id", "name", "subtype", "types", "query"],
   demographics: ["entity_id", "query"],
   tagLookup: ["id", "name", "type"],
@@ -56,6 +57,7 @@ interface Row { kind: string; status: number; count: number; top: string; ms: nu
 const rows: Row[] = [];
 const diffs: string[] = [];
 const tagFinds: Record<string, string[]> = {};
+const tagRaw: Record<string, any[]> = {};
 let errors = 0;
 const emptyKinds: string[] = [];
 const searchEmpty: string[] = [];
@@ -98,9 +100,10 @@ for (const ex of Object.values(EXAMPLES)) {
 }
 
 // 2. /v2/tags for foods, hobbies and venue words
-for (const w of ["carne asada", "Thai", "catfish", "soul food", "diner", "bass fishing", "pinball", "rose garden", "record shops", "event venue", "banquet hall", "community center", "park", "church hall", "caterer", "restaurant"]) {
+for (const w of ["Mexican", "Soul Food", "Barbecue", "wedding venue", "bar", "carne asada", "Thai", "catfish", "soul food", "diner", "bass fishing", "pinball", "rose garden", "record shops", "event venue", "banquet hall", "community center", "park", "church hall", "caterer", "restaurant"]) {
   const { list } = await hit(`tags "${w}"`, "/v2/tags", { "filter.query": w, "feature.typo_tolerance": true, take: 10 }, (b) => b.results?.tags, nm);
   if (list[0]) diff("tag lookup", list[0], EXPECT.tagLookup);
+  tagRaw[w] = list;
   tagFinds[w] = list.slice(0, 4).map((t: any) => `${t.id ?? t.tag_id} (${t.type ?? t.subtype ?? "?"}, ${t.name})`);
 }
 { // semantic fallback once
@@ -130,15 +133,15 @@ if (walt.length) {
   // rank
   const cand = (await fetcher("/v2/insights", { "filter.type": T.artist, "signal.interests.entities": sig, take: 5 })).body?.results?.entities?.map((e: any) => e.entity_id) ?? [];
   if (cand.length) await hit("rank (filter.results.entities)", "/v2/insights", { "filter.type": T.artist, "signal.interests.entities": sig, "filter.results.entities": cand.join(",") }, (b) => b.results?.entities, nm);
-  const ent = await hit("entities?ids (Walt)", "/entities", { ids: walt.join(",") }, (b) => b.results ?? b.entities, nm);
+  const ent = await hit("entities?ids (Walt)", "/entities", { entity_ids: walt.join(",") }, (b) => b.results ?? b.entities, nm);
   void ent;
 }
 
 // 4. Places in each demo city, with and without filters
-const cityFood: Record<string, string> = { walt: "carne asada", dana: "Thai", roz: "catfish" };
+const cityFood: Record<string, string> = { walt: "Mexican", dana: "Thai", roz: "Soul Food" };
 for (const ex of Object.values(EXAMPLES)) {
   const sig = resolved[ex.slug].slice(0, 4).join(",");
-  const cuisineId = (tagFinds[cityFood[ex.slug]] ?? [])[0]?.split(" ")[0];
+  const cuisineId = pickTag(tagRaw[cityFood[ex.slug]] ?? [], cityFood[ex.slug], CUISINE_PREF)?.id;
   const base: Params = { "filter.type": T.place, "filter.location.query": ex.city, take: 8 };
   if (sig) base["signal.interests.entities"] = sig;
   const plain = await hit(`places ${ex.city} (no filters)`, "/v2/insights", base, (b) => b.results?.entities, nm, true);
@@ -147,8 +150,8 @@ for (const ex of Object.values(EXAMPLES)) {
   if (cuisineId) {
     await hit(`food ${ex.city} (cuisine+price+rating)`, "/v2/insights", { ...base, "filter.tags": cuisineId, "filter.price_level.max": 2, "filter.properties.business_rating.min": 3.5 }, (b) => b.results?.entities, nm, true);
   }
-  const venueIds = ["event venue", "banquet hall", "community center", "park"].map((w) => (tagFinds[w] ?? [])[0]?.split(" ")[0]).filter(Boolean).join(",");
-  if (venueIds) await hit(`venue ${ex.city} (venue tags, no bars)`, "/v2/insights", { ...base, "filter.tags": venueIds, "filter.exclude.tags": (tagFinds["bar"] ?? [])[0]?.split(" ")[0] }, (b) => b.results?.entities, nm, true);
+  const venueIds = ["event venue", "banquet hall", "community center", "wedding venue", "park"].map((w) => pickTag(tagRaw[w] ?? [], w, VENUE_PREF)?.id).filter(Boolean).join(",");
+  if (venueIds) await hit(`venue ${ex.city} (venue tags, no bars)`, "/v2/insights", { ...base, "filter.tags": venueIds, "filter.exclude.tags": "urn:tag:category:place:bar,urn:tag:category:place:brewery,urn:tag:category:place:night_club" }, (b) => b.results?.entities, nm, true);
 }
 
 // ---- report ----

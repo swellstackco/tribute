@@ -3,7 +3,7 @@ import type { Params } from "./types.js";
 // Parameter names from the Qloo docs. Unknown names are silently ignored by Qloo (empty results),
 // so we refuse to send them.
 export const ALLOWED_PARAMS = new Set([
-  "query", "types", "take", "offset", "ids", "page",
+  "query", "types", "take", "offset", "ids", "entity_ids", "page",
   "filter.type", "filter.query", "filter.tag.types", "filter.tags", "filter.tags.operator",
   "filter.exclude.tags", "filter.exclude.tags.operator",
   "filter.location.query", "filter.location", "filter.location.radius",

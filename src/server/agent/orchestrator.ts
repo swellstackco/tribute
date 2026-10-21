@@ -116,7 +116,7 @@ export class Orchestrator {
     this.runs.set(id, run);
     this.d.db.prepare("INSERT INTO runs (id, created_at, input_hash, status, mode, provider, ip_hash) VALUES (?,?,?,?,?,?,?)")
       .run(id, Date.now(), inputHash(input, this.d.qloo.mode, run.provider), "running", this.d.qloo.mode, run.provider, ipHash);
-    void this.execute(run).catch((e) => this.fail(run, (e as Error).message));
+    void this.execute(run).catch((e) => this.fail(run, (e as Error).stack ?? (e as Error).message));
     return id;
   }
 
@@ -179,7 +179,7 @@ export class Orchestrator {
   private fail(run: Run, message: string) {
     run.status = "error";
     run.error = "We could not finish this one. Please try again in a moment.";
-    this.d.db.prepare("UPDATE runs SET status = 'error', trace = ? WHERE id = ?").run(JSON.stringify({ steps: run.steps, error: run.error, detail: message.slice(0, 200) }), run.id);
+    this.d.db.prepare("UPDATE runs SET status = 'error', trace = ? WHERE id = ?").run(JSON.stringify({ steps: run.steps, error: run.error, detail: message.slice(0, 600) }), run.id);
     this.emit(run, { type: "error", data: { message: run.error } });
   }
 

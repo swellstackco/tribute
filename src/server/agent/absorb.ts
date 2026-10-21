@@ -1,6 +1,7 @@
 import type { Item, ToolResult } from "../tools/index.js";
 import type { RunState } from "./state.js";
 import type { DescribeRow } from "../tools/describe.js";
+import { cuisineHint, pickTag } from "../tools/clean.js";
 
 export interface PlannedCall { name: string; input: Record<string, unknown>; label?: string }
 
@@ -38,15 +39,21 @@ export function absorb(s: RunState, call: PlannedCall, r: ToolResult) {
       s.tagsDone = true;
       for (const row of items as Array<{ query: string; items: Item[] }>) {
         s.tagLookups[row.query] = row.items;
-        const cur = s.love[row.query];
-        if (cur && cur.state === "empty" && row.items[0]) s.love[row.query] = { state: "tag", item: row.items[0] };
+        const love = s.love[row.query] ? row.query : s.tagQueryLove[row.query];
+        const cur = love ? s.love[love] : undefined;
+        const best = pickTag(row.items, row.query);
+        // A dish or menu tag is only a fair match for a food love. "Clint Eastwood" is not a burger.
+        const fair = best && (/^urn:tag:(hobby|genre:media|nearby_attraction|cuisine|genre:place:restaurant|amenity)/.test(best.id) || (/^urn:tag:(specialty_dish|menu_highlight)/.test(best.id) && !!cuisineHint(love ?? "")));
+        if (love && cur && cur.state === "empty" && best && fair) s.love[love] = { state: "tag", item: best };
       }
       break;
     }
     case "qloo_entity_tags":
+      s.recAttempted.add("__tags");
       if (r.status === "ok") s.tagProfile = items as Item[];
       break;
     case "qloo_audience_demographics":
+      s.recAttempted.add("__demo");
       if (r.status === "ok") s.audience = items[0];
       break;
     case "qloo_recommend": {

@@ -6,6 +6,11 @@ export const urnType = (t: string) => (t.startsWith("urn:") ? t : `urn:entity:${
 
 const explainList = (x: unknown): Item["explain"] => {
   if (!x) return undefined;
+  // Real shape: { "signal.interests.entities": [{ entity_id, score }] }
+  if (!Array.isArray(x) && typeof x === "object") {
+    const vals = Object.values(x as Record<string, unknown>);
+    if (vals.length && vals.every((v) => Array.isArray(v))) return explainList(vals.flat());
+  }
   if (Array.isArray(x)) {
     return x.map((r: any) => ({ id: String(r.entity_id ?? r.id ?? ""), contribution: typeof (r.contribution ?? r.score) === "number" ? (r.contribution ?? r.score) : undefined })).filter((r) => r.id);
   }
@@ -14,13 +19,13 @@ const explainList = (x: unknown): Item["explain"] => {
 };
 
 export const fromEntity = (e: SearchResult | InsightsEntity): Item => ({
-  id: e.entity_id, kind: "entity", name: e.name, type: e.types?.[0] ?? "urn:entity:unknown",
+  id: e.entity_id, kind: "entity", name: e.name ?? "Unnamed", type: e.types?.[0] ?? (e as InsightsEntity).subtype ?? "urn:entity:unknown",
   affinity: (e as InsightsEntity).query?.affinity, popularity: e.popularity,
-  properties: e.properties ?? {}, tags: (e.tags ?? []).map((t) => ({ id: t.id, name: t.name })),
+  properties: e.properties ?? {}, tags: (e.tags ?? []).filter((t) => t && t.id).map((t) => ({ id: t.id, name: t.name ?? t.id.split(":").pop()!.replace(/_/g, " ") })),
   explain: explainList((e as InsightsEntity).query?.explainability),
 });
-export const fromTagLookup = (t: TagLookup): Item => ({ id: t.id, kind: "tag", name: t.name, type: t.type ?? "urn:tag", properties: {}, tags: [] });
-export const fromTagInsight = (t: TagInsight): Item => ({ id: t.tag_id, kind: "tag", name: t.name, type: t.subtype ?? t.types?.[0] ?? "urn:tag", affinity: t.query?.affinity, properties: {}, tags: [] });
+export const fromTagLookup = (t: TagLookup): Item => ({ id: t.id, kind: "tag", name: t.name ?? t.id.split(":").pop() ?? "tag", type: t.type ?? "urn:tag", properties: {}, tags: [] });
+export const fromTagInsight = (t: TagInsight): Item => ({ id: t.tag_id, kind: "tag", name: t.name ?? t.tag_id.split(":").pop() ?? "tag", type: t.subtype ?? t.types?.[0] ?? "urn:tag", affinity: t.query?.affinity, properties: {}, tags: [] });
 
 export function remember(ctx: ToolContext, items: Item[]) {
   for (const i of items) ctx.seen.set(i.id, i);

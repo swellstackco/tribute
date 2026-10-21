@@ -11,21 +11,23 @@ export interface QlooTag {
 export interface SearchResult {
   name: string;
   entity_id: string;
-  types: string[]; // e.g. ["urn:entity:artist"]
+  types: string[]; // /search: ["urn:entity:artist"]. /v2/insights rows carry type "urn:entity" and subtype "urn:entity:artist" instead.
+  disambiguation?: string;
   popularity?: number; // 0..1
   properties?: Record<string, unknown>;
   tags?: QlooTag[];
 }
 
 export interface Explainability {
-  // Verify on probe. We accept a list of contributions or an id -> score map.
+  // Real (probed): { "signal.interests.entities": [{ entity_id, score }] }. We also accept a plain list or an id -> score map.
   [key: string]: unknown;
 }
 
 /** One row of /v2/insights with filter.type = urn:entity:* */
 export interface InsightsEntity extends SearchResult {
-  subtype?: string;
-  query: { affinity: number; explainability?: Explainability | Array<Record<string, unknown>> };
+  subtype?: string; // the entity kind on /v2/insights rows
+  type?: string;
+  query: { affinity: number; measurements?: unknown; explainability?: Explainability | Array<Record<string, unknown>> };
 }
 
 /** One row of /v2/insights with filter.type = urn:tag */
