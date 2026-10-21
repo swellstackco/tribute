@@ -7,11 +7,14 @@ const base = process.argv[2] ?? "http://127.0.0.1:5117";
 const out = process.argv[3] ?? "docs/assets";
 fs.mkdirSync(out, { recursive: true });
 const browser = await chromium.launch({ channel: "chrome", args: ["--mute-audio", "--autoplay-policy=document-user-activation-required"] });
+const only = process.argv[4] ?? null; // "desktop" or "mobile"
+const remote = !/127\.0\.0\.1|localhost/.test(base);
 const fails = [];
 const check = (ok, msg) => { console.log(`${ok ? "PASS" : "FAIL"}  ${msg}`); if (!ok) fails.push(msg); };
 const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth);
 
 for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 800]]) {
+  if (only && only !== label) continue;
   const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: label === "mobile" ? 2 : 1 });
   const page = await ctx.newPage();
   await page.goto(base);
@@ -23,7 +26,7 @@ for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 80
   const t0 = Date.now();
   await page.locator(".example").first().getByRole("link").click();
   await page.waitForSelector(".pick");
-  check(Date.now() - t0 < 1000, `${label}: example opens in under 1 s (${Date.now() - t0} ms)`);
+  check(Date.now() - t0 < (remote ? 3000 : 1000), `${label}: example opens in under ${remote ? 3 : 1} s (${Date.now() - t0} ms)`);
   check(await noHScroll(page), `${label}: plan page has no horizontal scroll`);
   const sections = await page.locator(".sec").count();
   check(sections === 6, `${label}: six sections (${sections})`);
@@ -73,7 +76,7 @@ for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 80
   await page.screenshot({ path: `${out}/ledger-${label}.png`, fullPage: true });
   if (label === "desktop") await page.screenshot({ path: `${out}/ledger.png` });
   await page.locator(".question .btn").nth(1).click();
-  await page.waitForSelector(".pick", { timeout: 8000 });
+  await page.waitForSelector(".pick", { timeout: remote ? 90000 : 8000 });
   check(true, `${label}: ledger resumed and landed on the plan`);
   await ctx.close();
 }

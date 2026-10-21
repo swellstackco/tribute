@@ -60,6 +60,23 @@ export class RealQlooClient implements QlooClient {
     throw last!;
   }
 
+  /** One uncached request that never throws on HTTP errors. Used by scripts/probe.ts. */
+  async raw(path: string, params: Params): Promise<{ status: number; body: any; ms: number; url: string }> {
+    const url = this.buildUrl(path, params);
+    const t0 = Date.now();
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 15000);
+    try {
+      const res = await this.o.fetchImpl(`${this.o.baseUrl}${url}`, { headers: { "X-Api-Key": this.o.apiKey, accept: "application/json" }, signal: ctl.signal });
+      const body = await res.json().catch(() => null);
+      return { status: res.status, body, ms: Date.now() - t0, url };
+    } catch (e) {
+      return { status: 0, body: { error: (e as Error).message }, ms: Date.now() - t0, url };
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
   async search(q: { query: string; types?: string[]; take?: number }): Promise<SearchResult[]> {
     const body = await this.get("/search", { query: q.query, types: q.types, take: q.take ?? 5 });
     return (body?.results ?? []) as SearchResult[];

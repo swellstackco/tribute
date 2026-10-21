@@ -18,7 +18,9 @@
     "seed:examples": "tsx scripts/seed-examples.ts",
     "cache:clear": "tsx scripts/cache-clear.ts",
     "readability": "tsx scripts/readability.ts",
-    "deploy": "bash scripts/deploy.sh"
+    "deploy": "bash scripts/deploy.sh",
+    "seed:prod": "node dist/server/server/cli/seed.js",
+    "cache:clear:prod": "node dist/server/server/cli/cacheClear.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.0.0",
