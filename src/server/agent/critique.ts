@@ -10,6 +10,8 @@ export type Exec = (call: PlannedCall, source: "critique", reason: string) => Pr
 const price = (i: Item) => Number((i.properties as any).price_level ?? 0);
 const rating = (i: Item) => Number((i.properties as any).business_rating ?? 5);
 
+const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+
 interface Fix { section: "food" | "venue"; reason: string; exclude: string[]; priceMax?: number; ratingMin?: number }
 
 /** Deterministic rules from the family's constraints. Returns the fixes that are needed. */
@@ -23,24 +25,24 @@ export function findViolations(s: RunState): Fix[] {
   const venueReasons: string[] = [];
   if ((faith === "faith" || guests === "older") && venues.some((v) => hasBarTag(v.tags))) {
     venueExclude.push(...BAR_TAG_IDS);
-    venueReasons.push(faith === "faith" ? "a faith-based service should not meet at a bar" : "a bar is a poor fit for many older guests");
+    venueReasons.push(faith === "faith" ? "a bar is not right for a faith-based service" : "a bar is not right for many older guests");
   }
   if (guests === "older" && venues.some((v) => hasActiveTag(v.tags))) {
     venueExclude.push(...ACTIVE_TAG_IDS);
-    venueReasons.push("hiking and rooftop places are hard for walkers and wheelchairs");
+    venueReasons.push("hiking and rooftop places are hard for walkers");
   }
   const venueTooPricey = budget === "modest" && venues.some((v) => price(v) > 2);
   if (venueExclude.length || venueTooPricey) {
     if (venueTooPricey) venueReasons.push("the budget is modest");
-    fixes.push({ section: "venue", reason: `Changed the gathering place: ${venueReasons.join("; ")}.`, exclude: [...new Set(venueExclude)], priceMax: budget === "modest" ? 2 : undefined });
+    fixes.push({ section: "venue", reason: `Changed the gathering place. ${venueReasons.map(cap).join(". ")}.`, exclude: [...new Set(venueExclude)], priceMax: budget === "modest" ? 2 : undefined });
   }
 
   const reasons: string[] = [];
   let ratingMin: number | undefined;
   let priceMax: number | undefined;
-  if (faith === "faith" && food.some((f) => rating(f) < 3.5)) { ratingMin = 3.5; reasons.push("caterers for a service should be rated 3.5 or higher"); }
+  if (faith === "faith" && food.some((f) => rating(f) < 3.5)) { ratingMin = 3.5; reasons.push("the caterer needs a rating of 3.5 or more"); }
   if (budget === "modest" && food.some((f) => price(f) > 2)) { priceMax = 2; reasons.push("the budget is modest"); }
-  if (reasons.length) fixes.push({ section: "food", reason: `Changed the food: ${reasons.join("; ")}.`, exclude: [], priceMax, ratingMin });
+  if (reasons.length) fixes.push({ section: "food", reason: `Changed the food. ${reasons.map(cap).join(". ")}.`, exclude: [], priceMax, ratingMin });
   return fixes;
 }
 

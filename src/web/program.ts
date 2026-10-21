@@ -31,7 +31,7 @@ export function pickCard(p: Pick): HTMLElement {
         h("span", { class: "fit-num" }, p.affinity.toFixed(2)))
     : h("div", { class: "fit" }, h("span", { class: "fit-label" }, T.fit), h("span", { class: "fit-own" }, T.ownWords));
   return h("article", { class: `pick ${p.mentioned ? "typed" : "found"}` },
-    h("h4", {}, p.name),
+    h("h3", {}, p.name),
     p.detail ? h("p", { class: "detail" }, p.detail) : null,
     links.childNodes.length ? links : null,
     h("p", { class: "because" }, because),
@@ -89,7 +89,7 @@ function booklet(plan: Plan): HTMLElement {
         h("ol", { class: "order" }, ...plan.program.slots.map((s) => h("li", {}, h("span", { class: "o-label" }, s.label), h("span", { class: "o-dots" }), h("span", { class: "o-detail" }, s.detail ?? "")))),
         ...plan.program.notes.map((n) => h("p", { class: "bk-note" }, n))),
       panel("bk-cover", h("p", { class: "kicker" }, T.cover), ornament(), h("h1", {}, name || "With love"), h("p", { class: "bk-city" }, plan.city),
-        plan.profile.eras.length ? h("p", { class: "bk-eras" }, plan.profile.eras.map((d) => `${d}s`).join("  ♦  ")) : null),
+        plan.profile.eras.length ? h("p", { class: "bk-eras" }, plan.profile.eras.map((d) => `${d}s`).join("   \u00b7   ")) : null),
     ),
     h("div", { class: "sheet" },
       panel("bk-music", h("h3", {}, "Music"), ornament(),

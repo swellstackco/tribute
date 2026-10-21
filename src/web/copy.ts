@@ -21,7 +21,7 @@ export const COPY = {
     micNote: "Your voice stays in your browser.",
     nameLabel: "First name",
     nameHelp: "Used only in your printed program. It is never sent to Qloo.",
-    cityLabel: "City for the gathering",
+    cityLabel: "City for the day",
     cityHelp: "We look for food and places near here.",
     faithLabel: "Kind of service",
     faith: { faith: "Faith-based", secular: "Not religious", either: "Either one" },

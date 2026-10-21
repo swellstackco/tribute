@@ -4,7 +4,7 @@ import { chromium } from "playwright";
 import fs from "node:fs";
 
 const base = process.argv[2] ?? "http://127.0.0.1:5117";
-const out = process.argv[3] ?? "docs/screens";
+const out = process.argv[3] ?? "docs/assets";
 fs.mkdirSync(out, { recursive: true });
 const browser = await chromium.launch({ channel: "chrome", args: ["--mute-audio", "--autoplay-policy=document-user-activation-required"] });
 const fails = [];
@@ -51,7 +51,10 @@ for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 80
     await page.pdf({ path: `${out}/program-print.pdf`, preferCSSPageSize: true });
     await page.emulateMedia({ media: "screen" });
   } else {
-    await page.goto(`${base}/#/why/${(await page.url()).split("/").pop()}`).catch(() => {});
+    await page.getByRole("link", { name: "See why we chose these" }).click();
+    await page.waitForSelector(".ev");
+    check(await noHScroll(page), `${label}: why page has no horizontal scroll`);
+    await page.screenshot({ path: `${out}/why-${label}.png`, fullPage: true });
   }
 
   // Start your own, with an ambiguous love.
@@ -62,7 +65,7 @@ for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 80
   for (let i = 0; i < loves.length; i++) await page.locator(".chip").nth(i).fill(loves[i]);
   await page.fill("#fname", "Sam" + label + Date.now() % 1000);
   await page.fill("#city", "Bakersfield, CA");
-  if (label === "desktop") await page.screenshot({ path: `${out}/intake.png`, fullPage: true });
+  await page.screenshot({ path: `${out}/intake-${label}.png`, fullPage: true });
   await page.getByRole("button", { name: "Build the tribute" }).click();
   await page.waitForSelector(".question");
   await page.waitForTimeout(400);

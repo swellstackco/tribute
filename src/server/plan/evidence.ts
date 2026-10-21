@@ -41,16 +41,16 @@ export function whyFor(item: Item, s: RunState): PickWhy[] {
 
 const list = (xs: string[]) => (xs.length <= 1 ? xs.join("") : xs.length === 2 ? `${xs[0]} and ${xs[1]}` : `${xs.slice(0, -1).join(", ")}, and ${xs.at(-1)}`);
 
-/** One-line "how we chose" per section. */
+/** One-line "how we chose" per section. Short sentences, plain words. */
 export function howWeChose(section: string, s: RunState): string {
-  const loves = resolvedEntities(s).slice(0, 4).map((e) => e.name);
-  const base = loves.length ? `Qloo looked at what fans of ${list(loves)} also love` : "Qloo looked at what people with this taste also love";
+  const loves = resolvedEntities(s).slice(0, 2).map((e) => e.name);
+  const fans = loves.length ? `Qloo looked at fans of ${list(loves)}.` : "Qloo looked at people with this taste.";
   switch (section) {
-    case "music": return `${base}, then listed the artists they play most.`;
-    case "readings": return `${base}, then listed the books and shows to hear.`;
-    case "food": return `Qloo looked for places near ${s.input.city} that match the foods you named and the taste of ${list(loves.slice(0, 2)) || "your loved one"}.`;
-    case "venue": return `Qloo looked for places near ${s.input.city} that fit the taste and the guests you described.`;
-    case "screen": return `${base}, then listed the films and shows. The years come from when they were made.`;
-    default: return "The order of service is a simple plan. We put the chosen music and readings in place.";
+    case "music": return `${fans} It found the artists they play most.`;
+    case "readings": return `${fans} It found books and shows they also love.`;
+    case "food": return `Qloo looked near ${s.input.city.split(",")[0]}. It matched the foods you named.`;
+    case "venue": return `Qloo looked near ${s.input.city.split(",")[0]}. It matched your guests and your budget.`;
+    case "screen": return `${fans} It found films and shows. Years come from when they were made.`;
+    default: return "A simple plan. The chosen music and readings are in place.";
   }
 }
