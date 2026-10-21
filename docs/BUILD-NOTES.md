@@ -52,3 +52,18 @@ Log of decisions, deviations from the spec, and things Ben must do.
 4. Switch: `printf '%s' "$QLOO_API_KEY" | bash scripts/go-live.sh`. That sets `QLOO_MODE=live` and `QLOO_API_KEY` in the server `.env` (backing it up), runs `pm2 reload tribute --update-env`, re-seeds the three examples with the free planner from live Qloo data, and checks `/health` (should show `"qloo":"live"`). Manual equivalent: edit the two lines in `/var/www/tribute/.env`, then `pm2 reload tribute --update-env`.
 5. Roll back: restore the `.env.bak-*` file and `pm2 reload tribute --update-env`.
 6. Add the redacted Walt walk-through (ids and names only) to the README.
+
+## T13 results (real Qloo, 2026-10-22)
+Probe (`QLOO_API_KEY=... npm run probe`): 63 requests, 0 errors, 0 empty, all three demo cities return places, PASS.
+Shape differences found and fixed:
+- Insights rows carry `type: "urn:entity"` and `subtype: "urn:entity:artist"`; only /search rows carry `types`. Fixed in the tool layer and types.
+- `/entities` takes `entity_ids`, not `ids`.
+- Explainability is `{ "signal.interests.entities": [{ entity_id, score }] }`. Parsed (and the older shapes still parse).
+- Artists use `properties.start_year` (not our guess `active_since`); fixtures and eras updated. Real rows also carry `query.measurements`, `disambiguation`, `external`, and ids are uppercase.
+- `/search` returns albums, games and places for common words (for example "bass fishing" gives video games, "Clint Eastwood" gives an album first). `qloo_describe` now keeps only artist, book, movie, tv_show, podcast, brand, person and author, requires an exact name, treats artist, person and author with one name as one love, and sends weak matches for plain words (pinball) to the tag step.
+- Tags: many namespaces share a name. Cuisine filters use `urn:tag:genre:place:restaurant:<x>` (dish tags filter to nothing); venue filters use `urn:tag:category:place:*`. A small dish-to-cuisine hint map (`src/server/tools/clean.ts`) turns "carne asada" into Mexican. "church hall" finds nothing real, so the word is "fellowship hall".
+- Bar rules: real place tags are noisy (hotels carry bar amenities). Bars are detected by main category tag or by name, excluded in the query, and also dropped client-side after the re-query.
+- Venue results are ranked by main category (banquet hall, community center, wedding venue and so on first; arcades, escape rooms and bowling last).
+- Qloo 429s: retries raised to 3 with Retry-After; describe runs three loves at a time and tolerates one failed lookup.
+- A latent planner loop (repeated empty entity_tags calls when no love resolved) is fixed.
+Live: `go-live.sh` run, `/health` shows `"qloo":"live"`, examples re-seeded from real data. One live Haiku run (custom input, live Qloo) completed in 38 s for $0.0093. Total model spend recorded on the box: $0.038.

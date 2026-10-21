@@ -15,7 +15,7 @@ const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollW
 
 for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 800]]) {
   if (only && only !== label) continue;
-  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: label === "mobile" ? 2 : 1 });
+  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1 });
   const page = await ctx.newPage();
   await page.goto(base);
   await page.waitForSelector(".example");
@@ -60,6 +60,7 @@ for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 80
     await page.screenshot({ path: `${out}/why-${label}.png`, fullPage: true });
   }
 
+  if (process.env.SKIP_OWN) { await ctx.close(); continue; } // no own run: it would call the paid model on a live site
   // Start your own, with an ambiguous love.
   await page.goto(`${base}/#/new`);
   await page.waitForSelector(".chip");
@@ -76,7 +77,7 @@ for (const [label, width, height] of [["desktop", 1280, 900], ["mobile", 375, 80
   await page.screenshot({ path: `${out}/ledger-${label}.png`, fullPage: true });
   if (label === "desktop") await page.screenshot({ path: `${out}/ledger.png` });
   await page.locator(".question .btn").nth(1).click();
-  await page.waitForSelector(".pick", { timeout: remote ? 90000 : 8000 });
+  await page.waitForSelector(".pick", { timeout: 90000 });
   check(true, `${label}: ledger resumed and landed on the plan`);
   await ctx.close();
 }

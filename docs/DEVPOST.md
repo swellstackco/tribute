@@ -49,6 +49,7 @@ Every pick card shows its evidence right on the card: a "Because" line naming th
 ### Accomplishments we are proud of
 - Every pick has visible evidence next to it, not behind a link.
 - The agent's work is visible and traceable: ledger, one question, a revision step.
+- It works on the real Qloo API: real affinity scores and explainability contributions on every card, real place data in three US cities.
 - A finished product, not a proof: landing, intake, live ledger, program, why page and print, usable on a phone.
 - It stays honest and safe: grounded picks, spend cap, rate limit, no captured Qloo data in the repo.
 
@@ -71,7 +72,7 @@ No sign-up, no keys, free.
 6. Press "Build this one again, live" to watch the agent work step by step.
 7. Back on the home page, press "Start your own", type five or more loves (try "Ghost" as one to see the one-question pause), add a city and press "Build the tribute".
 
-All three examples are fictional people. A note on data: [if the live site is still using Qloo mock mode at submit time, say so here and link the README; otherwise delete this line].
+All three examples are fictional people. The live site runs on real Qloo data (`/health` reports `"qloo":"live"`), including the three examples. The three example people are fictional; their loves are real public artists, shows and brands.
 
 ## Screenshots to upload (six)
 From `docs/assets/`:

@@ -8,7 +8,7 @@ set -euo pipefail
 HOST="${DEPLOY_HOST:-root@2.24.203.5}"
 DIR="${DEPLOY_DIR:-/var/www/tribute}"
 NODE22="${NODE22_DIR:-/opt/node22}"
-read -r KEY
+read -r KEY || true
 [ -n "$KEY" ] || { echo "No key on stdin."; exit 1; }
 printf '%s\n' "$KEY" | ssh "$HOST" "set -e; cd $DIR; read -r K; cp .env .env.bak-\$(date +%s); umask 077;
   grep -v -E '^(QLOO_MODE|QLOO_API_KEY)=' .env > .env.new; printf 'QLOO_MODE=live\nQLOO_API_KEY=%s\n' \"\$K\" >> .env.new; mv .env.new .env; chmod 600 .env;

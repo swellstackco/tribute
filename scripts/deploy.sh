@@ -15,7 +15,7 @@ if [ "$AVAIL" -lt 700 ]; then echo "Not enough free memory for a build. Stop."; 
 
 echo "== rsync"
 rsync -az --delete \
-  --exclude node_modules --exclude .env --exclude 'data/' --exclude .git --exclude dist \
+  --exclude node_modules --exclude .env --exclude .qloo-key --exclude '.env.*' --exclude 'data/' --exclude .git --exclude dist \
   --exclude 'docs/assets' --exclude 'docs/screens' --exclude '*.log' \
   ./ "$HOST:$DIR/"
 

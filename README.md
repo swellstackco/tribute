@@ -89,6 +89,24 @@ envelope `{ status, summary, results, result_count, error? }` and the same six s
 Not used: `where_popular`, `compare_audiences`, `trends` (the harness exposes nine shapes; Tribute mirrors six
 plus its own `ask_family`, `write_section` and `finish`).
 
+## A real run, redacted (Walt, Bakersfield; live Qloo)
+
+Names and shortened ids only. No response bodies. Seven loves in, eleven Qloo calls, six sections out.
+
+| # | Call | Result (top names) |
+|---|---|---|
+| 1 | `qloo_describe` (7 loves, batch) | partial, 3 named entities: Merle Haggard `8066100D`, Los Angeles Dodgers `9B8B279C`, Johnny Cash `7750E5CF` |
+| 2 | `qloo_find_tags` | the other loves as tags (Bass Fishing, Carne Asada, Diner), plus Mexican and the venue words |
+| 3 | `qloo_entity_tags` | era and feel: 25 tags with affinity |
+| 4 | `qloo_audience_demographics` | audience leans 55 and older |
+| 5 | `qloo_recommend` artist (explain) | Waylon Jennings `7C458A3E`, David Allan Coe, Willie Nelson, George Jones |
+| 6-9 | `qloo_recommend` book, movie, tv_show, podcast | A Moveable Feast, In Cold Blood; Walk the Line; Longmire, Justified; The Way I Heard It with Mike Rowe |
+| 10 | `qloo_recommend` place + Mexican tag + Bakersfield | Victor's Mexican Grill `CFD7393D` and others |
+| 11 | `qloo_recommend` place + venue tags + Bakersfield | Hungry Hunter Steakhouse, Bakersfield Marriott, Party Palace |
+| 12 | critique | many older guests: re-query without bars, hiking and rooftop places |
+
+What the Waylon Jennings card shows: affinity 0.97, and the explainability contributions Merle Haggard 0.41, Johnny Cash 0.34, Los Angeles Dodgers 0.25. "Clint Eastwood westerns" found no named match in Qloo, and the why page says so instead of guessing.
+
 ## The agent loop
 
 ```
@@ -163,7 +181,9 @@ kind against a real key), `npm run readability` (reading-level gate), `npm run c
 
 - Qloo has artists, not songs. Families pick songs through the Apple Music and Spotify search links.
 - Readings are books and authors. The family picks the passage.
-- Place coverage varies by region and may be thin outside large metros.
+- Place coverage varies by region. Bakersfield, Portland and Birmingham all return places, but venue results are mixed (Qloo's "event venue" includes arenas and arcades), so Tribute ranks venues by their main category and drops bars, escape rooms and similar when the family's constraints say so.
+- Not every named love exists in Qloo (for example, no person record came back for Clint Eastwood). The why page shows those as unmatched.
+- Entities the family typed are shown as "From your own words" with no fit score, because Qloo does not recommend a signal back to itself.
 - Qloo returns what it knows. Entities or regions it lacks come back empty and the page says so kindly.
 - This is a planning aid, not grief counseling.
 
