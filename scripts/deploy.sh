@@ -5,6 +5,8 @@ set -euo pipefail
 HOST="${DEPLOY_HOST:-root@2.24.203.5}"
 DIR="${DEPLOY_DIR:-/var/www/tribute}"
 PORT="${APP_PORT:-5117}"
+# better-sqlite3 13 needs Node 22+. The box default is Node 20, so Tribute uses its own copy in /opt/node22 (no global change).
+NODE22="${NODE22_DIR:-/opt/node22}"
 
 echo "== memory check"
 AVAIL=$(ssh "$HOST" "free -m | awk '/^Mem:/ {print \$7}'")
@@ -18,12 +20,12 @@ rsync -az --delete \
   ./ "$HOST:$DIR/"
 
 echo "== install and build on the server"
-ssh "$HOST" "cd $DIR && mkdir -p data && npm ci --no-audit --no-fund && npm run build && npm prune --omit=dev --no-audit --no-fund"
+ssh "$HOST" "export PATH=$NODE22/bin:\$PATH && cd $DIR && mkdir -p data && rm -rf node_modules && npm ci --no-audit --no-fund && npm run build && npm prune --omit=dev --no-audit --no-fund"
 
 echo "== pm2"
 ssh "$HOST" "cd $DIR && test -f .env || { echo '.env missing on the server'; exit 1; }; chmod 600 .env; \
   if pm2 describe tribute >/dev/null 2>&1; then pm2 reload tribute --update-env; \
-  else PORT=$PORT pm2 start dist/server/server/index.js --name tribute --time; fi; pm2 save"
+  else PORT=$PORT pm2 start dist/server/server/index.js --name tribute --interpreter $NODE22/bin/node --time; fi; pm2 save"
 
 echo "== health"
 for i in 1 2 3 4 5 6 7 8 9 10; do

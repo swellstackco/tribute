@@ -258,7 +258,7 @@ export class Orchestrator {
     run.plan = buildPlan(s);
     run.plan.notes = [...s.notes];
     run.status = "done";
-    run.spendUsd = provider instanceof MeteredProvider ? provider.runUsd : 0;
+    run.spendUsd = (provider as unknown as { runUsd?: number }).runUsd ?? 0;
     this.d.db.prepare("UPDATE runs SET status='done', plan=?, trace=?, spend_usd=?, provider=? WHERE id=?")
       .run(JSON.stringify(run.plan), JSON.stringify({ steps: run.steps, notice: run.notice }), run.spendUsd, run.provider, run.id);
     this.emit(run, { type: "done", data: { status: "done" } });

@@ -20,6 +20,8 @@ export class LlmCache {
 /** Outermost wrapper: a hit never reaches the provider (or the meter). */
 export class CachedProvider implements LlmProvider {
   hits = 0;
+  /** Spend of the wrapped provider for this run (0 on cache hits). */
+  get runUsd(): number { return (this.inner as { runUsd?: number }).runUsd ?? 0; }
   constructor(private inner: LlmProvider, private cache: LlmCache) {}
   get name() { return this.inner.name; }
   get model() { return this.inner.model; }

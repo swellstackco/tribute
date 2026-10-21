@@ -134,3 +134,16 @@ describe("anthropic provider (stubbed client only)", () => {
     expect(cn.kind).toBe("connection");
   });
 });
+
+describe("run cost through the cache wrapper", () => {
+  it("reports the metered spend for the run, and 0 on a hit", async () => {
+    const db = openDb(":memory:");
+    const inner: LlmProvider = { name: "anthropic", model: MODEL, complete: async () => ({ toolCalls: [], usage: { input_tokens: 1_000_000, output_tokens: 0 } }) };
+    const p = new CachedProvider(new MeteredProvider(inner, new Spend(db, 4)), new LlmCache(db));
+    const req = { system: "s", messages: [{ role: "user" as const, content: "x" }], tools: [], maxTokens: 10 };
+    await p.complete(req);
+    expect(p.runUsd).toBeCloseTo(0.1, 5);
+    await p.complete(req); // cache hit adds nothing
+    expect(p.runUsd).toBeCloseTo(0.1, 5);
+  });
+});

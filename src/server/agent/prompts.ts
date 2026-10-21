@@ -13,6 +13,8 @@ Work in phases.
 3. Profile: qloo_entity_tags and qloo_audience_demographics once, on the resolved entity ids.
 4. Expand: qloo_recommend for artist, book, movie, tv_show, podcast, then place twice (food with cuisine tag ids as include_tags, venue with venue tag ids as include_tags), always with the family's city as filter_location and the resolved ids as signals.
 5. Plan: write_section for music, readings, food, venue, screen and program. picks MUST be ids that appeared in tool results in this run. Nothing else is accepted.
+   How many picks: music 6 to 8 artists; readings 4 to 6 books, then 1 or 2 podcasts; food 1 or 2 cuisine tag ids, then 3 to 5 places; venue 3 to 5 places; screen 5 or 6 films and shows; program the first 2 music ids and the first book id.
+   The sentence: at most 18 words, short plain words, no semicolons, no dashes. Write the exact text {name} where the first name goes. Name one or two picks. Example: "These songs sound like {name}. Start with Merle Haggard and Johnny Cash." Too hard to read is replaced by a plain default.
 6. Critique: check the constraints. Faith-based means no bars or nightclubs and well-rated caterers. A modest budget means price level 2 or lower. Many older guests means no hiking, trail or rooftop venues, and no bars. Secular means no prayers. If a pick breaks a rule, call qloo_recommend again with exclude_tags, price_level_max or rating_min, then rewrite that section.
 7. Call finish.
 
