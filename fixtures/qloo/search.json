@@ -1,0 +1,451 @@
+{
+ "merle haggard": [
+  {
+   "name": "Merle Haggard",
+   "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.78,
+   "properties": {
+    "active_since": 1963
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:country",
+     "name": "Country",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:outlaw_country",
+     "name": "Outlaw country",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "johnny cash": [
+  {
+   "name": "Johnny Cash",
+   "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.92,
+   "properties": {
+    "active_since": 1955
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:country",
+     "name": "Country",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:folk",
+     "name": "Folk",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "clint eastwood": [
+  {
+   "name": "Clint Eastwood",
+   "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+   "types": [
+    "urn:entity:person"
+   ],
+   "popularity": 0.9,
+   "properties": {},
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:western",
+     "name": "Western",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "los angeles dodgers": [
+  {
+   "name": "Los Angeles Dodgers",
+   "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+   "types": [
+    "urn:entity:brand"
+   ],
+   "popularity": 0.9,
+   "properties": {},
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:baseball",
+     "name": "Baseball",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "dodgers": [
+  {
+   "name": "Los Angeles Dodgers",
+   "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+   "types": [
+    "urn:entity:brand"
+   ],
+   "popularity": 0.9,
+   "properties": {},
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:baseball",
+     "name": "Baseball",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "david bowie": [
+  {
+   "name": "David Bowie",
+   "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.96,
+   "properties": {
+    "active_since": 1964
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:art_rock",
+     "name": "Art rock",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:classic_rock",
+     "name": "Classic rock",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "patti smith": [
+  {
+   "name": "Patti Smith",
+   "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.7,
+   "properties": {
+    "active_since": 1971
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:punk",
+     "name": "Punk",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:poetry",
+     "name": "Poetry",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "studio ghibli": [
+  {
+   "name": "Studio Ghibli",
+   "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+   "types": [
+    "urn:entity:brand"
+   ],
+   "popularity": 0.9,
+   "properties": {},
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:animation",
+     "name": "Animation",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "ursula k le guin": [
+  {
+   "name": "Ursula K. Le Guin",
+   "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+   "types": [
+    "urn:entity:person"
+   ],
+   "popularity": 0.7,
+   "properties": {},
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:science_fiction",
+     "name": "Science fiction",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "the x-files": [
+  {
+   "name": "The X-Files",
+   "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "popularity": 0.9,
+   "properties": {
+    "release_year": 1993,
+    "image": {
+     "url": "https://images.example.invalid/xfiles.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:science_fiction",
+     "name": "Science fiction",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:drama",
+     "name": "Drama",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "x-files": [
+  {
+   "name": "The X-Files",
+   "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "popularity": 0.9,
+   "properties": {
+    "release_year": 1993,
+    "image": {
+     "url": "https://images.example.invalid/xfiles.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:science_fiction",
+     "name": "Science fiction",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:drama",
+     "name": "Drama",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "mahalia jackson": [
+  {
+   "name": "Mahalia Jackson",
+   "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.6,
+   "properties": {
+    "active_since": 1927
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:gospel",
+     "name": "Gospel",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:soul",
+     "name": "Soul",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "aretha franklin": [
+  {
+   "name": "Aretha Franklin",
+   "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.93,
+   "properties": {
+    "active_since": 1956
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:soul",
+     "name": "Soul",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:gospel",
+     "name": "Gospel",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "dolly parton": [
+  {
+   "name": "Dolly Parton",
+   "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.94,
+   "properties": {
+    "active_since": 1959
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:country",
+     "name": "Country",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:folk",
+     "name": "Folk",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "the andy griffith show": [
+  {
+   "name": "The Andy Griffith Show",
+   "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "popularity": 0.82,
+   "properties": {
+    "release_year": 1960,
+    "image": {
+     "url": "https://images.example.invalid/andy.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:sitcom",
+     "name": "Sitcom",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:keyword:media:small_town",
+     "name": "Small town",
+     "type": "urn:tag:keyword:media"
+    }
+   ]
+  }
+ ],
+ "andy griffith show": [
+  {
+   "name": "The Andy Griffith Show",
+   "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "popularity": 0.82,
+   "properties": {
+    "release_year": 1960,
+    "image": {
+     "url": "https://images.example.invalid/andy.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:sitcom",
+     "name": "Sitcom",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:keyword:media:small_town",
+     "name": "Small town",
+     "type": "urn:tag:keyword:media"
+    }
+   ]
+  }
+ ],
+ "maya angelou": [
+  {
+   "name": "Maya Angelou",
+   "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+   "types": [
+    "urn:entity:person"
+   ],
+   "popularity": 0.85,
+   "properties": {},
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:poetry",
+     "name": "Poetry",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "id": "urn:tag:genre:media:memoir",
+     "name": "Memoir",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "ghost": [
+  {
+   "name": "Ghost",
+   "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "popularity": 0.71,
+   "properties": {
+    "active_since": 2006
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:art_rock",
+     "name": "Art rock",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  },
+  {
+   "name": "Ghost",
+   "entity_id": "ec21bfae-2972-41a5-97aa-cb27cdef0f29",
+   "types": [
+    "urn:entity:movie"
+   ],
+   "popularity": 0.66,
+   "properties": {
+    "release_year": 1990,
+    "image": {
+     "url": "https://images.example.invalid/ghostfilm.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:drama",
+     "name": "Drama",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "bass fishing": [],
+ "carne asada": [],
+ "black coffee at the diner": [],
+ "pinball": [],
+ "thai food": [],
+ "rainy-day record shops": [],
+ "rose garden": [],
+ "fried catfish and greens": []
+}

@@ -16,8 +16,8 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env) {
     qlooBase: env.QLOO_BASE_URL || "https://hackathon.api.qloo.com",
     llmProvider: llm,
     anthropicKey: env.ANTHROPIC_API_KEY || "",
-    llmModel: env.LLM_MODEL || "claude-haiku-5-5",
-    spendCap: Number(env.LLM_SPEND_CAP_USD || 4),
+    llmModel: "claude-haiku-5-5" as const,
+    spendCap: Number.isFinite(Number(env.LLM_SPEND_CAP_USD)) && Number(env.LLM_SPEND_CAP_USD) > 0 ? Number(env.LLM_SPEND_CAP_USD) : 4,
     rateSalt: env.RATE_SALT || "dev-salt",
     dbPath: env.DB_PATH || "data/tribute.db",
   };

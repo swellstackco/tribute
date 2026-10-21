@@ -1,0 +1,1459 @@
+{
+ "bakersfield": [
+  {
+   "name": "Rosa's Taqueria",
+   "entity_id": "cd5c8367-0197-4236-bb6c-f68688105ae0",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.67,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1420 Chester Ave, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.3792,
+     "longitude": -119.0188,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.6,
+    "price_level": 2,
+    "phone": "+1-555-0186",
+    "website": "https://example.invalid/bk1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:mexican",
+     "name": "Mexican",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.93
+   }
+  },
+  {
+   "name": "Casa Del Sol Catering",
+   "entity_id": "7d3a5f88-87e9-4f67-95ec-7bb2df4dfa7f",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.66,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "2210 Union Ave, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.3601,
+     "longitude": -119.015,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.4,
+    "price_level": 2,
+    "phone": "+1-555-0150",
+    "website": "https://example.invalid/bk2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:mexican",
+     "name": "Mexican",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.9
+   }
+  },
+  {
+   "name": "Dusty Boots Diner",
+   "entity_id": "1cd5f011-3df5-433c-ac88-7df9cc40fa04",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "905 Kern St, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.368,
+     "longitude": -119.0201,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.3,
+    "price_level": 1,
+    "phone": "+1-555-0125",
+    "website": "https://example.invalid/bk3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:diner",
+     "name": "Diner",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.86
+   }
+  },
+  {
+   "name": "Lupe's Carnitas and Grill",
+   "entity_id": "bbc61dc2-6bd7-4578-910a-f290287ddc63",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "3300 Panama Ln, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.348,
+     "longitude": -119.002,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.1,
+    "price_level": 1,
+    "phone": "+1-555-0175",
+    "website": "https://example.invalid/bk4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:mexican",
+     "name": "Mexican",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.84
+   }
+  },
+  {
+   "name": "Gold Rail Steakhouse",
+   "entity_id": "ebeb2d29-6eda-4a64-ac31-9bec5baef522",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.59,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "700 Truxtun Ave, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.3745,
+     "longitude": -119.021,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.5,
+    "price_level": 3,
+    "phone": "+1-555-0121",
+    "website": "https://example.invalid/bk5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.72
+   }
+  },
+  {
+   "name": "Stone Table Smokehouse",
+   "entity_id": "bbe07b91-693a-4e2f-aeb8-345cabebfc3e",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.62,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "88 Mill Rock Rd, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.39,
+     "longitude": -119.04,
+     "city": "Bakersfield"
+    },
+    "business_rating": 3.2,
+    "price_level": 2,
+    "phone": "+1-555-0164",
+    "website": "https://example.invalid/bk6"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:barbecue",
+     "name": "Barbecue",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.8
+   }
+  },
+  {
+   "name": "Hillcrest Community Hall",
+   "entity_id": "a8e3c53e-9542-4d4b-9ff1-959e1fd03e7a",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.66,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1200 Hillcrest Dr, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.3912,
+     "longitude": -119.0334,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.4,
+    "price_level": 1,
+    "phone": "+1-555-0172",
+    "website": "https://example.invalid/bv1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:community_center",
+     "name": "Community center",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.91
+   }
+  },
+  {
+   "name": "Kern River Pavilion",
+   "entity_id": "ad9eb915-1290-4b11-9d6a-a16d6c68592c",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.65,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "4000 Truxtun Ave, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.383,
+     "longitude": -119.06,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.5,
+    "price_level": 1,
+    "phone": "+1-555-0124",
+    "website": "https://example.invalid/bv2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:park",
+     "name": "Park",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.88
+   }
+  },
+  {
+   "name": "Oak Grove Banquet Hall",
+   "entity_id": "12639a13-e69f-4990-8f47-05a127c0cf41",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "515 Oak St, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.3765,
+     "longitude": -119.019,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.2,
+    "price_level": 2,
+    "phone": "+1-555-0117",
+    "website": "https://example.invalid/bv3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:banquet_hall",
+     "name": "Banquet hall",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.86
+   }
+  },
+  {
+   "name": "The Silver Spur Saloon",
+   "entity_id": "d12b4ac3-2eec-4159-80c9-dc6fb4c6159b",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.67,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "2900 Chester Ave, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.373,
+     "longitude": -119.016,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4,
+    "price_level": 2,
+    "phone": "+1-555-0178",
+    "website": "https://example.invalid/bv4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:bar",
+     "name": "Bar",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.93
+   }
+  },
+  {
+   "name": "Ridgeview Lookout Terrace",
+   "entity_id": "3e479fbc-bb34-4d76-a7f6-caea178ae440",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "9 Ridgeview Rd, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.42,
+     "longitude": -119.01,
+     "city": "Bakersfield"
+    },
+    "business_rating": 4.6,
+    "price_level": 3,
+    "phone": "+1-555-0179",
+    "website": "https://example.invalid/bv5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:rooftop",
+     "name": "Rooftop",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:hiking_trail",
+     "name": "Hiking trail",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.84
+   }
+  },
+  {
+   "name": "Starlite Room",
+   "entity_id": "fef3e242-9644-4bf4-8ec2-df63316dc65c",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.61,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1850 19th St, Bakersfield, CA",
+    "geocode": {
+     "latitude": 35.377,
+     "longitude": -119.018,
+     "city": "Bakersfield"
+    },
+    "business_rating": 3.9,
+    "price_level": 3,
+    "phone": "+1-555-0198",
+    "website": "https://example.invalid/bv6"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:nightclub",
+     "name": "Nightclub",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.78
+   }
+  }
+ ],
+ "portland": [
+  {
+   "name": "Basil and Ginger Thai Kitchen",
+   "entity_id": "43b03d94-aee9-4c35-9915-c57585504c52",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.68,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "3120 SE Division St, Portland, OR",
+    "geocode": {
+     "latitude": 45.5049,
+     "longitude": -122.6317,
+     "city": "Portland"
+    },
+    "business_rating": 4.7,
+    "price_level": 2,
+    "phone": "+1-555-0153",
+    "website": "https://example.invalid/pd1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:thai",
+     "name": "Thai",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.94
+   }
+  },
+  {
+   "name": "Lotus Noodle House",
+   "entity_id": "cec96d9f-ba12-4463-8195-b4ac94a80878",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.66,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "815 NW 21st Ave, Portland, OR",
+    "geocode": {
+     "latitude": 45.5282,
+     "longitude": -122.696,
+     "city": "Portland"
+    },
+    "business_rating": 4.5,
+    "price_level": 2,
+    "phone": "+1-555-0170",
+    "website": "https://example.invalid/pd2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:thai",
+     "name": "Thai",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.9
+   }
+  },
+  {
+   "name": "Green Door Catering Co.",
+   "entity_id": "ae01e12a-93cb-4d5a-89fe-6daf7ef8ae8a",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "520 N Killingsworth St, Portland, OR",
+    "geocode": {
+     "latitude": 45.5622,
+     "longitude": -122.672,
+     "city": "Portland"
+    },
+    "business_rating": 4.4,
+    "price_level": 3,
+    "phone": "+1-555-0126",
+    "website": "https://example.invalid/pd3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:cuisine:place:thai",
+     "name": "Thai",
+     "type": "urn:tag:cuisine"
+    }
+   ],
+   "query": {
+    "affinity": 0.86
+   }
+  },
+  {
+   "name": "Rainy Day Coffee and Records",
+   "entity_id": "7fa209d9-0b04-406c-98b8-fc730256d719",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.63,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1411 NE Alberta St, Portland, OR",
+    "geocode": {
+     "latitude": 45.5589,
+     "longitude": -122.65,
+     "city": "Portland"
+    },
+    "business_rating": 4.6,
+    "price_level": 1,
+    "phone": "+1-555-0193",
+    "website": "https://example.invalid/pd4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:coffee_shop",
+     "name": "Coffee shop",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:record_store",
+     "name": "Record store",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.82
+   }
+  },
+  {
+   "name": "Cedar Pot Dumplings",
+   "entity_id": "3ec19a4e-bb0a-4db2-8031-2b1aff3a203b",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.61,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "77 SW Morrison St, Portland, OR",
+    "geocode": {
+     "latitude": 45.5175,
+     "longitude": -122.672,
+     "city": "Portland"
+    },
+    "business_rating": 4.2,
+    "price_level": 1,
+    "phone": "+1-555-0117",
+    "website": "https://example.invalid/pd5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.78
+   }
+  },
+  {
+   "name": "Flipside Pinball Lounge",
+   "entity_id": "54d93995-42fd-43e9-b6c3-3ba3c46c58cc",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.68,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "2200 SE Hawthorne Blvd, Portland, OR",
+    "geocode": {
+     "latitude": 45.5121,
+     "longitude": -122.643,
+     "city": "Portland"
+    },
+    "business_rating": 4.5,
+    "price_level": 2,
+    "phone": "+1-555-0118",
+    "website": "https://example.invalid/pv1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:arcade",
+     "name": "Arcade",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:bar",
+     "name": "Bar",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.95
+   }
+  },
+  {
+   "name": "Mossgate Brewpub",
+   "entity_id": "d9ed3ef7-523b-4a52-ba90-dd8c9e25100d",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.66,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "630 N Russell St, Portland, OR",
+    "geocode": {
+     "latitude": 45.541,
+     "longitude": -122.671,
+     "city": "Portland"
+    },
+    "business_rating": 4.4,
+    "price_level": 2,
+    "phone": "+1-555-0170",
+    "website": "https://example.invalid/pv2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:brewery",
+     "name": "Brewery",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:bar",
+     "name": "Bar",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.9
+   }
+  },
+  {
+   "name": "Willow Park Pavilion",
+   "entity_id": "13bba36b-7713-47f7-a2c4-693d68101f35",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.65,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "40 Willow Park Way, Portland, OR",
+    "geocode": {
+     "latitude": 45.532,
+     "longitude": -122.65,
+     "city": "Portland"
+    },
+    "business_rating": 4.6,
+    "price_level": 1,
+    "phone": "+1-555-0179",
+    "website": "https://example.invalid/pv3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:park",
+     "name": "Park",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.88
+   }
+  },
+  {
+   "name": "Alder Street Event Loft",
+   "entity_id": "d68524a0-2315-4882-b942-852fef280eee",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1020 SW Alder St, Portland, OR",
+    "geocode": {
+     "latitude": 45.52,
+     "longitude": -122.683,
+     "city": "Portland"
+    },
+    "business_rating": 4.5,
+    "price_level": 3,
+    "phone": "+1-555-0168",
+    "website": "https://example.invalid/pv4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:rooftop",
+     "name": "Rooftop",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.86
+   }
+  },
+  {
+   "name": "Northside Community Hall",
+   "entity_id": "65193146-ebc0-4a27-b6ea-a135becdb97a",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.63,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "9 N Bryant Ave, Portland, OR",
+    "geocode": {
+     "latitude": 45.56,
+     "longitude": -122.662,
+     "city": "Portland"
+    },
+    "business_rating": 4.3,
+    "price_level": 1,
+    "phone": "+1-555-0181",
+    "website": "https://example.invalid/pv5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:community_center",
+     "name": "Community center",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.82
+   }
+  }
+ ],
+ "birmingham": [
+  {
+   "name": "Miss Odessa's Kitchen",
+   "entity_id": "91fbf9c5-1eb5-4fdd-b172-8942f0cbdfdf",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.68,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "2040 5th Ave N, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.523,
+     "longitude": -86.81,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.7,
+    "price_level": 1,
+    "phone": "+1-555-0199",
+    "website": "https://example.invalid/bh1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:southern",
+     "name": "Southern and soul food",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.95
+   }
+  },
+  {
+   "name": "Magnolia Table Catering",
+   "entity_id": "99fa2166-0fa3-4c10-809c-7343cd5333b6",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.67,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "310 Highland Ave, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.501,
+     "longitude": -86.793,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.5,
+    "price_level": 2,
+    "phone": "+1-555-0134",
+    "website": "https://example.invalid/bh2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:southern",
+     "name": "Southern and soul food",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.92
+   }
+  },
+  {
+   "name": "Golden Skillet Fish House",
+   "entity_id": "ead96e4a-294a-4912-abcf-5376fef58a42",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.66,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1730 Morris Ave, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.516,
+     "longitude": -86.803,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.3,
+    "price_level": 1,
+    "phone": "+1-555-0193",
+    "website": "https://example.invalid/bh3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:southern",
+     "name": "Southern and soul food",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.9
+   }
+  },
+  {
+   "name": "Belle Meade Fine Catering",
+   "entity_id": "d197e730-bb9d-43ab-8480-8403fca5bf78",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.62,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "55 Mountain Brook Pkwy, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.49,
+     "longitude": -86.76,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.8,
+    "price_level": 3,
+    "phone": "+1-555-0157",
+    "website": "https://example.invalid/bh4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:southern",
+     "name": "Southern and soul food",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.8
+   }
+  },
+  {
+   "name": "Sunday Plate Cafe",
+   "entity_id": "c6099614-ec6b-4756-b41b-d1823ec58dd2",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "17 Valley Rd, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.54,
+     "longitude": -86.83,
+     "city": "Birmingham"
+    },
+    "business_rating": 3.1,
+    "price_level": 1,
+    "phone": "+1-555-0192",
+    "website": "https://example.invalid/bh5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:southern",
+     "name": "Southern and soul food",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:cuisine:place:diner",
+     "name": "Diner",
+     "type": "urn:tag:cuisine"
+    }
+   ],
+   "query": {
+    "affinity": 0.84
+   }
+  },
+  {
+   "name": "Greater Hope Fellowship Hall",
+   "entity_id": "d36e187c-e9c5-4915-b9a6-bc75ca0ac471",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.68,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1800 Dr Martin Luther King Jr Dr, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.535,
+     "longitude": -86.812,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.6,
+    "price_level": 1,
+    "phone": "+1-555-0125",
+    "website": "https://example.invalid/bv1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:church_hall",
+     "name": "Church hall",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:community_center",
+     "name": "Community center",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.94
+   }
+  },
+  {
+   "name": "Magnolia Park Community Center",
+   "entity_id": "6dabcbad-d4ce-4cdf-bb5e-f59f868b585b",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.66,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "600 Magnolia Park Ln, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.51,
+     "longitude": -86.8,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.4,
+    "price_level": 1,
+    "phone": "+1-555-0170",
+    "website": "https://example.invalid/bv2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:community_center",
+     "name": "Community center",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.9
+   }
+  },
+  {
+   "name": "Red Mountain Brewing Taproom",
+   "entity_id": "6920bff6-c796-4ae0-883c-26bd07df0ec9",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.68,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "230 Red Mountain Expy, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.495,
+     "longitude": -86.795,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.5,
+    "price_level": 2,
+    "phone": "+1-555-0114",
+    "website": "https://example.invalid/bv3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:brewery",
+     "name": "Brewery",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:bar",
+     "name": "Bar",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.96
+   }
+  },
+  {
+   "name": "Vestavia Garden Pavilion",
+   "entity_id": "3a049873-e160-4f39-b602-15fcc2ddcfed",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "3 Garden Way, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.46,
+     "longitude": -86.78,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.7,
+    "price_level": 2,
+    "phone": "+1-555-0126",
+    "website": "https://example.invalid/bv4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:park",
+     "name": "Park",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.86
+   }
+  },
+  {
+   "name": "The Skyline Rooftop",
+   "entity_id": "b2d5fa0d-08ad-4a92-a299-5263d9e1798b",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.63,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "100 20th St N, Birmingham, AL",
+    "geocode": {
+     "latitude": 33.517,
+     "longitude": -86.81,
+     "city": "Birmingham"
+    },
+    "business_rating": 4.3,
+    "price_level": 3,
+    "phone": "+1-555-0132",
+    "website": "https://example.invalid/bv5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:rooftop",
+     "name": "Rooftop",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:bar",
+     "name": "Bar",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.82
+   }
+  }
+ ],
+ "*": [
+  {
+   "name": "Maple Street Kitchen",
+   "entity_id": "0fdadd68-38a1-4c45-ae96-ca4a20950bfd",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "120 Maple St, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.4,
+    "price_level": 2,
+    "phone": "+1-555-0169",
+    "website": "https://example.invalid/g1"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:cuisine:place:diner",
+     "name": "Diner",
+     "type": "urn:tag:cuisine"
+    }
+   ],
+   "query": {
+    "affinity": 0.85
+   }
+  },
+  {
+   "name": "Harvest Table Catering",
+   "entity_id": "0fc42c05-43ed-4c34-b785-e51469254844",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.63,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "44 Main St, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.5,
+    "price_level": 2,
+    "phone": "+1-555-0120",
+    "website": "https://example.invalid/g2"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:caterer",
+     "name": "Caterer",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.82
+   }
+  },
+  {
+   "name": "Corner Cafe",
+   "entity_id": "deea8162-22f5-4205-9fdd-c45115ef4823",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.61,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "9 Elm St, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.2,
+    "price_level": 1,
+    "phone": "+1-555-0161",
+    "website": "https://example.invalid/g3"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:cuisine:place:diner",
+     "name": "Diner",
+     "type": "urn:tag:cuisine"
+    },
+    {
+     "id": "urn:tag:category:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.78
+   }
+  },
+  {
+   "name": "Riverside Community Hall",
+   "entity_id": "074d2ab8-937c-4be3-90fd-d6cf64c2e3c7",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.65,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "300 River Rd, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.4,
+    "price_level": 1,
+    "phone": "+1-555-0132",
+    "website": "https://example.invalid/g4"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:community_center",
+     "name": "Community center",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.88
+   }
+  },
+  {
+   "name": "Town Park Pavilion",
+   "entity_id": "c164fafc-6b25-45c1-9afd-2339571d363d",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.64,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "1 Park Ln, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.5,
+    "price_level": 1,
+    "phone": "+1-555-0167",
+    "website": "https://example.invalid/g5"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:park",
+     "name": "Park",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.84
+   }
+  },
+  {
+   "name": "Grand Hall Events",
+   "entity_id": "9440b1f0-46c4-4423-a701-31b8ac53120b",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.62,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "75 Grand Ave, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.3,
+    "price_level": 3,
+    "phone": "+1-555-0153",
+    "website": "https://example.invalid/g6"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:banquet_hall",
+     "name": "Banquet hall",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.8
+   }
+  },
+  {
+   "name": "Hilltop Tap House",
+   "entity_id": "639bc582-d43d-4c24-8432-2e42c1b59b6a",
+   "types": [
+    "urn:entity:place"
+   ],
+   "popularity": 0.6,
+   "subtype": "urn:entity:place",
+   "properties": {
+    "address": "12 Hill St, {CITY}, US",
+    "geocode": {
+     "latitude": 40,
+     "longitude": -90,
+     "city": "{CITY}"
+    },
+    "business_rating": 4.1,
+    "price_level": 2,
+    "phone": "+1-555-0184",
+    "website": "https://example.invalid/g7"
+   },
+   "tags": [
+    {
+     "id": "urn:tag:category:place:bar",
+     "name": "Bar",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:brewery",
+     "name": "Brewery",
+     "type": "urn:tag:category"
+    },
+    {
+     "id": "urn:tag:category:place:event_venue",
+     "name": "Event venue",
+     "type": "urn:tag:category"
+    }
+   ],
+   "query": {
+    "affinity": 0.76
+   }
+  }
+ ]
+}

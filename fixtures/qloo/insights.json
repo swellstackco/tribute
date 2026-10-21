@@ -1,0 +1,4517 @@
+{
+ "insights:urn:entity:artist:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "entities": [
+   {
+    "name": "Merle Haggard",
+    "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.78,
+    "properties": {
+     "active_since": 1963
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:outlaw_country",
+      "name": "Outlaw country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.97,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Johnny Cash",
+    "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.92,
+    "properties": {
+     "active_since": 1955
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.95,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Buck Owens",
+    "entity_id": "a350f852-bb58-44c0-a0e5-40bd527e87f8",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.55,
+    "properties": {
+     "active_since": 1957
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.91,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Waylon Jennings",
+    "entity_id": "7c89c16b-99a6-4b0b-bc7d-589a23135424",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "active_since": 1958
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:outlaw_country",
+      "name": "Outlaw country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.88,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Willie Nelson",
+    "entity_id": "6088f61b-30eb-4450-83af-a8845120a9fe",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "active_since": 1956
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:outlaw_country",
+      "name": "Outlaw country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "George Strait",
+    "entity_id": "bc0ac7b2-ffea-4dc0-b07c-08b61676ec5c",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.78,
+    "properties": {
+     "active_since": 1975
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Kris Kristofferson",
+    "entity_id": "6921bae9-cb3b-4590-bf8b-318458c546ea",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.66,
+    "properties": {
+     "active_since": 1969
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.79,
+     "explainability": [
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Ernest Tubb",
+    "entity_id": "45d86b6d-de92-433a-9aab-5df9736697da",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.45,
+    "properties": {
+     "active_since": 1936
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.74,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Gram Parsons",
+    "entity_id": "994e61af-b4d4-4e52-b441-1748432032b3",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.5,
+    "properties": {
+     "active_since": 1965
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.7,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:book:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "entities": [
+   {
+    "name": "Lonesome Dove",
+    "entity_id": "0c490eab-4885-49d4-a0c5-8daba3501511",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "publication_year": 1985,
+     "author": "Larry McMurtry"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "True Grit",
+    "entity_id": "f4d49b79-3044-4650-907f-cdae38b5b8e6",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.65,
+    "properties": {
+     "publication_year": 1968,
+     "author": "Charles Portis"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "A River Runs Through It",
+    "entity_id": "b71f1743-f8a8-4289-b4e6-400cc76e60c2",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "publication_year": 1976,
+     "author": "Norman Maclean"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:memoir",
+      "name": "Memoir",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:hobby:fishing",
+      "name": "Fishing",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.83,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Old Man and the Sea",
+    "entity_id": "11854948-c749-4cc9-9aab-24eb27cbebeb",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "publication_year": 1952,
+     "author": "Ernest Hemingway"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:outsider",
+      "name": "Outsider",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Of Mice and Men",
+    "entity_id": "62c95610-e2b4-4f1a-b987-96fdb173080f",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "publication_year": 1937,
+     "author": "John Steinbeck"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.76,
+     "explainability": [
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Outlaw Josey Wales",
+    "entity_id": "91baea26-a40b-44c7-829e-043879afb05e",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.4,
+    "properties": {
+     "publication_year": 1972,
+     "author": "Forrest Carter"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.72,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Blood Meridian",
+    "entity_id": "fd9cb34a-dc48-485d-ae3a-180d72b7997f",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.6,
+    "properties": {
+     "publication_year": 1985,
+     "author": "Cormac McCarthy"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.6,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:movie:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "entities": [
+   {
+    "name": "Unforgiven",
+    "entity_id": "b89963f7-2020-44ba-b11b-07bf0686b726",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 1992,
+     "image": {
+      "url": "https://images.example.invalid/unforgiven.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.94,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Good, the Bad and the Ugly",
+    "entity_id": "99539b93-d535-4477-9403-5244bd7c0054",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "release_year": 1966,
+     "image": {
+      "url": "https://images.example.invalid/gbu.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.92,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Gran Torino",
+    "entity_id": "e75e65d7-a31f-4a3c-b377-759f377e6ae4",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.82,
+    "properties": {
+     "release_year": 2008,
+     "image": {
+      "url": "https://images.example.invalid/gran.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.85,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Outlaw Josey Wales (film)",
+    "entity_id": "838ab5af-abe7-458c-9b77-316dec2a2842",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.66,
+    "properties": {
+     "release_year": 1976,
+     "image": {
+      "url": "https://images.example.invalid/josey.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.84,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Walk the Line",
+    "entity_id": "14cae5a5-1347-4fe1-9e3f-5c569847609c",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 2005,
+     "image": {
+      "url": "https://images.example.invalid/walk.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Field of Dreams",
+    "entity_id": "3f715413-6760-4c49-90b9-7e65c83570a9",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.82,
+    "properties": {
+     "release_year": 1989,
+     "image": {
+      "url": "https://images.example.invalid/field.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:baseball",
+      "name": "Baseball",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.78,
+     "explainability": [
+      {
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Bull Durham",
+    "entity_id": "039cd2b6-6d3a-4324-bb67-a2a42585c025",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "release_year": 1988,
+     "image": {
+      "url": "https://images.example.invalid/bull.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:baseball",
+      "name": "Baseball",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.72,
+     "explainability": [
+      {
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "A River Runs Through It (film)",
+    "entity_id": "dad4ce5f-9dba-4ac1-87a9-7df23e4679bb",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "release_year": 1992,
+     "image": {
+      "url": "https://images.example.invalid/river.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:hobby:fishing",
+      "name": "Fishing",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.7,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:tv_show:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "entities": [
+   {
+    "name": "Gunsmoke",
+    "entity_id": "9542c611-6fc3-4c34-98f0-6775ab802008",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.6,
+    "properties": {
+     "release_year": 1955,
+     "image": {
+      "url": "https://images.example.invalid/gunsmoke.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Rawhide",
+    "entity_id": "1655159a-35ca-4906-b9ff-92b69341ad66",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.5,
+    "properties": {
+     "release_year": 1959,
+     "image": {
+      "url": "https://images.example.invalid/rawhide.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.88,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Bonanza",
+    "entity_id": "5db840bc-b9b1-4527-a6d9-cdc154ef6783",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.6,
+    "properties": {
+     "release_year": 1959,
+     "image": {
+      "url": "https://images.example.invalid/bonanza.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Hee Haw",
+    "entity_id": "67f133c5-4bc5-4325-9f63-913bd825a637",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.5,
+    "properties": {
+     "release_year": 1969,
+     "image": {
+      "url": "https://images.example.invalid/heehaw.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.75,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:podcast:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "entities": [
+   {
+    "name": "Vin Scully: Dodgers Broadcast Highlights",
+    "entity_id": "ed0c1050-e014-4c2c-a37e-e8011df030df",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.35,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:baseball",
+      "name": "Baseball",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.93,
+     "explainability": [
+      {
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Grand Ole Opry Radio Hour",
+    "entity_id": "ffbbca2b-ce8a-433f-9b0d-c634b868de99",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.4,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.84,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Bass Fishing Hour",
+    "entity_id": "4303c0f1-4c04-41dd-a102-349bc2478cb6",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.3,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:hobby:fishing",
+      "name": "Fishing",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.75,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:brand:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "entities": [
+   {
+    "name": "Stetson",
+    "entity_id": "40dad3c7-dc4c-425e-9215-0d895061521a",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.6,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Wrangler",
+    "entity_id": "9a8342b9-ef01-4f08-9867-8d230c165f33",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.65,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:western",
+      "name": "Western",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Shimano",
+    "entity_id": "ab570a06-5267-4b05-b783-e71ea9b4e1b4",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.5,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:hobby:fishing",
+      "name": "Fishing",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.7,
+     "explainability": [
+      {
+       "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:tag:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "tags": [
+   {
+    "tag_id": "urn:tag:genre:media:country",
+    "name": "Country",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.96
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:outlaw_country",
+    "name": "Outlaw country",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.92
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:western",
+    "name": "Western",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:nostalgia",
+    "name": "Nostalgia",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.84
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:baseball",
+    "name": "Baseball",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "tag_id": "urn:tag:hobby:fishing",
+    "name": "Fishing",
+    "subtype": "urn:tag:hobby",
+    "types": [
+     "urn:tag:hobby"
+    ],
+    "query": {
+     "affinity": 0.78
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:road_trip",
+    "name": "Road trip",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.74
+    }
+   },
+   {
+    "tag_id": "urn:tag:style:qloo:raw",
+    "name": "Raw",
+    "subtype": "urn:tag:style:qloo",
+    "types": [
+     "urn:tag:style:qloo"
+    ],
+    "query": {
+     "affinity": 0.7
+    }
+   },
+   {
+    "tag_id": "urn:tag:style:qloo:warm",
+    "name": "Warm",
+    "subtype": "urn:tag:style:qloo",
+    "types": [
+     "urn:tag:style:qloo"
+    ],
+    "query": {
+     "affinity": 0.66
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:small_town",
+    "name": "Small town",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.6
+    }
+   }
+  ]
+ },
+ "insights:urn:demographics:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+  "demographics": [
+   {
+    "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
+    "query": {
+     "age": {
+      "24_and_younger": -0.31,
+      "25_to_29": -0.22,
+      "30_to_34": -0.12,
+      "35_to_44": 0.05,
+      "45_to_54": 0.24,
+      "55_and_older": 0.41
+     },
+     "gender": {
+      "male": 0.24,
+      "female": -0.26
+     }
+    }
+   },
+   {
+    "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+    "query": {
+     "age": {
+      "24_and_younger": -0.31,
+      "25_to_29": -0.22,
+      "30_to_34": -0.12,
+      "35_to_44": 0.05,
+      "45_to_54": 0.24,
+      "55_and_older": 0.41
+     },
+     "gender": {
+      "male": 0.28,
+      "female": -0.26
+     }
+    }
+   },
+   {
+    "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+    "query": {
+     "age": {
+      "24_and_younger": -0.31,
+      "25_to_29": -0.22,
+      "30_to_34": -0.12,
+      "35_to_44": 0.05,
+      "45_to_54": 0.24,
+      "55_and_older": 0.41
+     },
+     "gender": {
+      "male": 0.24,
+      "female": -0.26
+     }
+    }
+   },
+   {
+    "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+    "query": {
+     "age": {
+      "24_and_younger": -0.31,
+      "25_to_29": -0.22,
+      "30_to_34": -0.12,
+      "35_to_44": 0.05,
+      "45_to_54": 0.24,
+      "55_and_older": 0.41
+     },
+     "gender": {
+      "male": 0.28,
+      "female": -0.26
+     }
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:artist:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "entities": [
+   {
+    "name": "David Bowie",
+    "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.96,
+    "properties": {
+     "active_since": 1964
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:classic_rock",
+      "name": "Classic rock",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.97,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Patti Smith",
+    "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "active_since": 1971
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:punk",
+      "name": "Punk",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:poetry",
+      "name": "Poetry",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.95,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Lou Reed",
+    "entity_id": "975eee48-3697-4b0e-8ad9-770ffb978ac8",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.78,
+    "properties": {
+     "active_since": 1964
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:punk",
+      "name": "Punk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Talking Heads",
+    "entity_id": "aface48c-cb5b-411a-857b-9f65f7275228",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.82,
+    "properties": {
+     "active_since": 1975
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:punk",
+      "name": "Punk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.87,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Brian Eno",
+    "entity_id": "d318fd8d-d50f-437d-b48f-124b67910fef",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.72,
+    "properties": {
+     "active_since": 1971
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.85,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Kate Bush",
+    "entity_id": "1aa17b2d-a1c0-4926-833e-eeb378de775f",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "active_since": 1978
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Joni Mitchell",
+    "entity_id": "4b64e693-ef2f-41ce-811c-62c753e81b39",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.84,
+    "properties": {
+     "active_since": 1964
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Cure",
+    "entity_id": "07313d3f-6adc-4066-8386-7ce5640ef121",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.86,
+    "properties": {
+     "active_since": 1978
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:punk",
+      "name": "Punk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.78,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Joe Hisaishi",
+    "entity_id": "35a0335a-d096-4a19-a5d6-9453d284fae7",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.6,
+    "properties": {
+     "active_since": 1981
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:animation",
+      "name": "Animation",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.72,
+     "explainability": [
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:book:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "entities": [
+   {
+    "name": "The Left Hand of Darkness",
+    "entity_id": "4e4d3dbd-3157-4e6a-83e9-5bb38948a9ff",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.75,
+    "properties": {
+     "publication_year": 1969,
+     "author": "Ursula K. Le Guin"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:science_fiction",
+      "name": "Science fiction",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.94,
+     "explainability": [
+      {
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Dispossessed",
+    "entity_id": "23a1e46e-1358-499e-9ed2-5f6f159fd447",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "publication_year": 1974,
+     "author": "Ursula K. Le Guin"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:science_fiction",
+      "name": "Science fiction",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.92,
+     "explainability": [
+      {
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Just Kids",
+    "entity_id": "b3bc1b71-bcff-4d6d-b2bc-bbdd673a5bcd",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "publication_year": 2010,
+     "author": "Patti Smith"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:memoir",
+      "name": "Memoir",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "A Wizard of Earthsea",
+    "entity_id": "ae7dc5e7-69f6-424f-8d1c-9784d49e80af",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.72,
+    "properties": {
+     "publication_year": 1968,
+     "author": "Ursula K. Le Guin"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:fantasy",
+      "name": "Fantasy",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.88,
+     "explainability": [
+      {
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Do Androids Dream of Electric Sheep?",
+    "entity_id": "df741532-95fb-46c0-a0d5-01a39b047abc",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.78,
+    "properties": {
+     "publication_year": 1968,
+     "author": "Philip K. Dick"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:science_fiction",
+      "name": "Science fiction",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.84,
+     "explainability": [
+      {
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Neverwhere",
+    "entity_id": "43169497-dcab-4399-83f9-70899f6d1c5a",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.66,
+    "properties": {
+     "publication_year": 1996,
+     "author": "Neil Gaiman"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:fantasy",
+      "name": "Fantasy",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.78,
+     "explainability": [
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:movie:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "entities": [
+   {
+    "name": "Spirited Away",
+    "entity_id": "76d6226e-8576-49e7-b5dd-e1150d77561e",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.92,
+    "properties": {
+     "release_year": 2001,
+     "image": {
+      "url": "https://images.example.invalid/spirited.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:animation",
+      "name": "Animation",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:fantasy",
+      "name": "Fantasy",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.95,
+     "explainability": [
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "My Neighbor Totoro",
+    "entity_id": "ee5a932f-b10b-43e3-90c0-381f6fd0fb2c",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "release_year": 1988,
+     "image": {
+      "url": "https://images.example.invalid/totoro.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:animation",
+      "name": "Animation",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.93,
+     "explainability": [
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Kiki's Delivery Service",
+    "entity_id": "253bc258-b06e-432d-b9e5-b1693f9b7870",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 1989,
+     "image": {
+      "url": "https://images.example.invalid/kiki.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:animation",
+      "name": "Animation",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.88,
+     "explainability": [
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Blade Runner",
+    "entity_id": "409943c6-ecd1-4110-89e4-c345df77097e",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "release_year": 1982,
+     "image": {
+      "url": "https://images.example.invalid/bladerunner.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:science_fiction",
+      "name": "Science fiction",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Labyrinth",
+    "entity_id": "731ff64f-9689-4382-b463-af5d360c4009",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.78,
+    "properties": {
+     "release_year": 1986,
+     "image": {
+      "url": "https://images.example.invalid/labyrinth.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:fantasy",
+      "name": "Fantasy",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.84,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Tommy",
+    "entity_id": "a85fa6b2-730b-4f70-b884-3591dedbf013",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.6,
+    "properties": {
+     "release_year": 1975,
+     "image": {
+      "url": "https://images.example.invalid/tommy.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:hobby:pinball",
+      "name": "Pinball",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.7,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:tv_show:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "entities": [
+   {
+    "name": "The X-Files",
+    "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "release_year": 1993,
+     "image": {
+      "url": "https://images.example.invalid/xfiles.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:science_fiction",
+      "name": "Science fiction",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.96,
+     "explainability": [
+      {
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Twin Peaks",
+    "entity_id": "5e08c8f3-5dd1-47bc-9f1c-7455f5523a15",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "release_year": 1990,
+     "image": {
+      "url": "https://images.example.invalid/twinpeaks.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:outsider",
+      "name": "Outsider",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Twilight Zone",
+    "entity_id": "9a67dc57-62b2-4d13-ad15-95c8eeb66290",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "release_year": 1959,
+     "image": {
+      "url": "https://images.example.invalid/twilight.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:science_fiction",
+      "name": "Science fiction",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Portlandia",
+    "entity_id": "371616e7-c22d-4306-a046-756d5d22fdee",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "release_year": 2011,
+     "image": {
+      "url": "https://images.example.invalid/portlandia.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.74,
+     "explainability": [
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:podcast:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "entities": [
+   {
+    "name": "The Ghibli Cast",
+    "entity_id": "981cad9e-1d9f-4e11-9130-840453b60116",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.3,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:animation",
+      "name": "Animation",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.85,
+     "explainability": [
+      {
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Bowie: Starman Sessions",
+    "entity_id": "1eb6753d-7356-4382-b932-3b05c132bebb",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.3,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:brand:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "entities": [
+   {
+    "name": "Powell's Books",
+    "entity_id": "5e68764a-bf80-48b8-b785-11c8abc4684c",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.5,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:poetry",
+      "name": "Poetry",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.88,
+     "explainability": [
+      {
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Fender",
+    "entity_id": "bf98528d-1fb9-4a63-a4e5-0cb3034ce1ac",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.7,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:classic_rock",
+      "name": "Classic rock",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.76,
+     "explainability": [
+      {
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Polaroid",
+    "entity_id": "43385b34-b48d-4acd-a813-6f50e5c85975",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.6,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.7,
+     "explainability": [
+      {
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:tag:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "tags": [
+   {
+    "tag_id": "urn:tag:genre:media:art_rock",
+    "name": "Art rock",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.96
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:science_fiction",
+    "name": "Science fiction",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.93
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:punk",
+    "name": "Punk",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "tag_id": "urn:tag:style:qloo:dreamy",
+    "name": "Dreamy",
+    "subtype": "urn:tag:style:qloo",
+    "types": [
+     "urn:tag:style:qloo"
+    ],
+    "query": {
+     "affinity": 0.86
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:animation",
+    "name": "Animation",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.84
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:fantasy",
+    "name": "Fantasy",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:outsider",
+    "name": "Outsider",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.78
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:poetry",
+    "name": "Poetry",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.74
+    }
+   },
+   {
+    "tag_id": "urn:tag:hobby:record_collecting",
+    "name": "Record collecting",
+    "subtype": "urn:tag:hobby",
+    "types": [
+     "urn:tag:hobby"
+    ],
+    "query": {
+     "affinity": 0.7
+    }
+   },
+   {
+    "tag_id": "urn:tag:hobby:pinball",
+    "name": "Pinball",
+    "subtype": "urn:tag:hobby",
+    "types": [
+     "urn:tag:hobby"
+    ],
+    "query": {
+     "affinity": 0.64
+    }
+   }
+  ]
+ },
+ "insights:urn:demographics:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+  "demographics": [
+   {
+    "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+    "query": {
+     "age": {
+      "24_and_younger": -0.08,
+      "25_to_29": 0.02,
+      "30_to_34": 0.12,
+      "35_to_44": 0.26,
+      "45_to_54": 0.3,
+      "55_and_older": 0.1
+     },
+     "gender": {
+      "male": 0.06,
+      "female": -0.08
+     }
+    }
+   },
+   {
+    "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+    "query": {
+     "age": {
+      "24_and_younger": -0.08,
+      "25_to_29": 0.02,
+      "30_to_34": 0.12,
+      "35_to_44": 0.26,
+      "45_to_54": 0.3,
+      "55_and_older": 0.1
+     },
+     "gender": {
+      "male": 0.1,
+      "female": -0.08
+     }
+    }
+   },
+   {
+    "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+    "query": {
+     "age": {
+      "24_and_younger": -0.08,
+      "25_to_29": 0.02,
+      "30_to_34": 0.12,
+      "35_to_44": 0.26,
+      "45_to_54": 0.3,
+      "55_and_older": 0.1
+     },
+     "gender": {
+      "male": 0.06,
+      "female": -0.08
+     }
+    }
+   },
+   {
+    "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+    "query": {
+     "age": {
+      "24_and_younger": -0.08,
+      "25_to_29": 0.02,
+      "30_to_34": 0.12,
+      "35_to_44": 0.26,
+      "45_to_54": 0.3,
+      "55_and_older": 0.1
+     },
+     "gender": {
+      "male": 0.1,
+      "female": -0.08
+     }
+    }
+   },
+   {
+    "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+    "query": {
+     "age": {
+      "24_and_younger": -0.08,
+      "25_to_29": 0.02,
+      "30_to_34": 0.12,
+      "35_to_44": 0.26,
+      "45_to_54": 0.3,
+      "55_and_older": 0.1
+     },
+     "gender": {
+      "male": 0.06,
+      "female": -0.08
+     }
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:artist:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "entities": [
+   {
+    "name": "Mahalia Jackson",
+    "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.6,
+    "properties": {
+     "active_since": 1927
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.97,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Aretha Franklin",
+    "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.93,
+    "properties": {
+     "active_since": 1956
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.96,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Dolly Parton",
+    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.94,
+    "properties": {
+     "active_since": 1959
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.94,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Sam Cooke",
+    "entity_id": "13787ef3-a4a5-43b0-b108-1637d7eee87d",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.75,
+    "properties": {
+     "active_since": 1951
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Staple Singers",
+    "entity_id": "40a029aa-c566-4aaa-b68e-0b514e06ce68",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.55,
+    "properties": {
+     "active_since": 1948
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.88,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Sister Rosetta Tharpe",
+    "entity_id": "8659af44-d367-44aa-b101-e00924d56609",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.55,
+    "properties": {
+     "active_since": 1938
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Mavis Staples",
+    "entity_id": "5c202256-c0fa-44dd-aed4-1f78e482b952",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.5,
+    "properties": {
+     "active_since": 1950
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.84,
+     "explainability": [
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Otis Redding",
+    "entity_id": "a8b425c7-f342-4736-b1ba-dad362774070",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "active_since": 1960
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Patsy Cline",
+    "entity_id": "22280b5d-064f-4eb4-b4c3-dd5587d3f6cf",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.78,
+    "properties": {
+     "active_since": 1955
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.76,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:book:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "entities": [
+   {
+    "name": "I Know Why the Caged Bird Sings",
+    "entity_id": "60244ee1-d778-403f-bb2b-fcd86b3707ce",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "publication_year": 1969,
+     "author": "Maya Angelou"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:memoir",
+      "name": "Memoir",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:faith",
+      "name": "Faith",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.96,
+     "explainability": [
+      {
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "And Still I Rise",
+    "entity_id": "750cb0e0-d7d5-41bf-8b84-a6abbd6c2db8",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "publication_year": 1978,
+     "author": "Maya Angelou"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:poetry",
+      "name": "Poetry",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.93,
+     "explainability": [
+      {
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Color Purple",
+    "entity_id": "0e36feb7-5bcb-442f-b275-f1acc9a6d3d0",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "publication_year": 1982,
+     "author": "Alice Walker"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:faith",
+      "name": "Faith",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Their Eyes Were Watching God",
+    "entity_id": "87c2a635-34dd-4726-b902-c67b3bc9bb46",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.75,
+    "properties": {
+     "publication_year": 1937,
+     "author": "Zora Neale Hurston"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.85,
+     "explainability": [
+      {
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "To Kill a Mockingbird",
+    "entity_id": "2ad015aa-d545-400f-94ca-161f2390b894",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.95,
+    "properties": {
+     "publication_year": 1960,
+     "author": "Harper Lee"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Gilead",
+    "entity_id": "42992850-0f5e-47d0-893b-6558a8cf5d30",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.55,
+    "properties": {
+     "publication_year": 2004,
+     "author": "Marilynne Robinson"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:faith",
+      "name": "Faith",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.74,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:movie:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "entities": [
+   {
+    "name": "The Color Purple (film)",
+    "entity_id": "96c1a2c6-ce83-4d61-a5f5-d377650f9705",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "release_year": 1985,
+     "image": {
+      "url": "https://images.example.invalid/colorp.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Steel Magnolias",
+    "entity_id": "5df1a89c-9eb6-42c5-bda4-b5b75acabd74",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 1989,
+     "image": {
+      "url": "https://images.example.invalid/steel.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "To Kill a Mockingbird (film)",
+    "entity_id": "d7f78a37-2158-43f7-9e08-6e5fd4371136",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "release_year": 1962,
+     "image": {
+      "url": "https://images.example.invalid/mocking.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.84,
+     "explainability": [
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "It's a Wonderful Life",
+    "entity_id": "6af4b358-562b-439b-b207-87cdaa23cede",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "release_year": 1946,
+     "image": {
+      "url": "https://images.example.invalid/wonderful.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Walk the Line",
+    "entity_id": "14cae5a5-1347-4fe1-9e3f-5c569847609c",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 2005,
+     "image": {
+      "url": "https://images.example.invalid/walk.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.5,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:tv_show:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "entities": [
+   {
+    "name": "The Andy Griffith Show",
+    "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.82,
+    "properties": {
+     "release_year": 1960,
+     "image": {
+      "url": "https://images.example.invalid/andy.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.97,
+     "explainability": [
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Mayberry R.F.D.",
+    "entity_id": "89f26a80-9485-4964-bd88-ddedb18ced5e",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.4,
+    "properties": {
+     "release_year": 1968,
+     "image": {
+      "url": "https://images.example.invalid/mayberry.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Beverly Hillbillies",
+    "entity_id": "3fb4d4a5-c3d5-4239-a46f-5ab4ec297bb8",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "release_year": 1962,
+     "image": {
+      "url": "https://images.example.invalid/hillbillies.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.85,
+     "explainability": [
+      {
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "contribution": 0.6
+      },
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.4
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Golden Girls",
+    "entity_id": "ff1f2822-18d2-445d-b83c-a4fea4a35433",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "release_year": 1985,
+     "image": {
+      "url": "https://images.example.invalid/golden.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.8,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Lawrence Welk Show",
+    "entity_id": "3f74365b-1717-4e8c-9525-0fa861de5f01",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.4,
+    "properties": {
+     "release_year": 1955,
+     "image": {
+      "url": "https://images.example.invalid/welk.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.72,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:podcast:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "entities": [
+   {
+    "name": "Gospel Hour Radio",
+    "entity_id": "ff640a02-d7d6-4910-9e80-b74c992c0214",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.35,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.9,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Garden Hour",
+    "entity_id": "29214d56-5dac-4e66-99df-8c6c4519b5ce",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.3,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:hobby:gardening",
+      "name": "Gardening",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:brand:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "entities": [
+   {
+    "name": "Burpee Seeds",
+    "entity_id": "154e9054-ce33-4949-8c6a-ef54fe3f5d1e",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.4,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:hobby:gardening",
+      "name": "Gardening",
+      "type": "urn:tag:hobby"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.86,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Gaither Music",
+    "entity_id": "07d30624-bebf-42cf-9a45-c6a9929a7ab7",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.35,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.82,
+     "explainability": [
+      {
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "contribution": 0.6
+      }
+     ]
+    }
+   },
+   {
+    "name": "Levi's",
+    "entity_id": "fafd642e-7b9f-4588-8c7a-f52d2eb97517",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.8,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.6,
+     "explainability": [
+      {
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "contribution": 0.6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "insights:urn:tag:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "tags": [
+   {
+    "tag_id": "urn:tag:genre:media:gospel",
+    "name": "Gospel",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.97
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:soul",
+    "name": "Soul",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.94
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:faith",
+    "name": "Faith",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "tag_id": "urn:tag:style:qloo:warm",
+    "name": "Warm",
+    "subtype": "urn:tag:style:qloo",
+    "types": [
+     "urn:tag:style:qloo"
+    ],
+    "query": {
+     "affinity": 0.88
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:small_town",
+    "name": "Small town",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.84
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:country",
+    "name": "Country",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:sitcom",
+    "name": "Sitcom",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.78
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:poetry",
+    "name": "Poetry",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.74
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:memoir",
+    "name": "Memoir",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.7
+    }
+   },
+   {
+    "tag_id": "urn:tag:hobby:gardening",
+    "name": "Gardening",
+    "subtype": "urn:tag:hobby",
+    "types": [
+     "urn:tag:hobby"
+    ],
+    "query": {
+     "affinity": 0.66
+    }
+   }
+  ]
+ },
+ "insights:urn:demographics:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+  "demographics": [
+   {
+    "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+    "query": {
+     "age": {
+      "24_and_younger": -0.38,
+      "25_to_29": -0.3,
+      "30_to_34": -0.2,
+      "35_to_44": -0.04,
+      "45_to_54": 0.22,
+      "55_and_older": 0.52
+     },
+     "gender": {
+      "male": -0.22,
+      "female": 0.2
+     }
+    }
+   },
+   {
+    "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+    "query": {
+     "age": {
+      "24_and_younger": -0.38,
+      "25_to_29": -0.3,
+      "30_to_34": -0.2,
+      "35_to_44": -0.04,
+      "45_to_54": 0.22,
+      "55_and_older": 0.52
+     },
+     "gender": {
+      "male": -0.18,
+      "female": 0.2
+     }
+    }
+   },
+   {
+    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+    "query": {
+     "age": {
+      "24_and_younger": -0.38,
+      "25_to_29": -0.3,
+      "30_to_34": -0.2,
+      "35_to_44": -0.04,
+      "45_to_54": 0.22,
+      "55_and_older": 0.52
+     },
+     "gender": {
+      "male": -0.22,
+      "female": 0.2
+     }
+    }
+   },
+   {
+    "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+    "query": {
+     "age": {
+      "24_and_younger": -0.38,
+      "25_to_29": -0.3,
+      "30_to_34": -0.2,
+      "35_to_44": -0.04,
+      "45_to_54": 0.22,
+      "55_and_older": 0.52
+     },
+     "gender": {
+      "male": -0.18,
+      "female": 0.2
+     }
+    }
+   },
+   {
+    "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+    "query": {
+     "age": {
+      "24_and_younger": -0.38,
+      "25_to_29": -0.3,
+      "30_to_34": -0.2,
+      "35_to_44": -0.04,
+      "45_to_54": 0.22,
+      "55_and_older": 0.52
+     },
+     "gender": {
+      "male": -0.22,
+      "female": 0.2
+     }
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:artist:*": {
+  "entities": [
+   {
+    "name": "Johnny Cash",
+    "entity_id": "883e51d3-12c7-49a5-a877-ed69aa0d425a",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.92,
+    "properties": {
+     "active_since": 1955
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "name": "Willie Nelson",
+    "entity_id": "6088f61b-30eb-4450-83af-a8845120a9fe",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "active_since": 1956
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:outlaw_country",
+      "name": "Outlaw country",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.85
+    }
+   },
+   {
+    "name": "Aretha Franklin",
+    "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.93,
+    "properties": {
+     "active_since": 1956
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "name": "Joni Mitchell",
+    "entity_id": "4b64e693-ef2f-41ce-811c-62c753e81b39",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.84,
+    "properties": {
+     "active_since": 1964
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.75
+    }
+   },
+   {
+    "name": "Sam Cooke",
+    "entity_id": "13787ef3-a4a5-43b0-b108-1637d7eee87d",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.75,
+    "properties": {
+     "active_since": 1951
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:gospel",
+      "name": "Gospel",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.7
+    }
+   },
+   {
+    "name": "Dolly Parton",
+    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.94,
+    "properties": {
+     "active_since": 1959
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:country",
+      "name": "Country",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:folk",
+      "name": "Folk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.65
+    }
+   },
+   {
+    "name": "Otis Redding",
+    "entity_id": "a8b425c7-f342-4736-b1ba-dad362774070",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "active_since": 1960
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:soul",
+      "name": "Soul",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.6
+    }
+   },
+   {
+    "name": "Talking Heads",
+    "entity_id": "aface48c-cb5b-411a-857b-9f65f7275228",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "popularity": 0.82,
+    "properties": {
+     "active_since": 1975
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:art_rock",
+      "name": "Art rock",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:punk",
+      "name": "Punk",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:artist",
+    "query": {
+     "affinity": 0.55
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:book:*": {
+  "entities": [
+   {
+    "name": "Where the Crawdads Sing",
+    "entity_id": "5c8ecae3-ca6e-4bdb-8312-304cc1d05497",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "publication_year": 2018,
+     "author": "Delia Owens"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "name": "The Alchemist",
+    "entity_id": "8bed3283-1cef-4096-9e26-f26578a29546",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "publication_year": 1988,
+     "author": "Paulo Coelho"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:fantasy",
+      "name": "Fantasy",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.85
+    }
+   },
+   {
+    "name": "To Kill a Mockingbird",
+    "entity_id": "2ad015aa-d545-400f-94ca-161f2390b894",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.95,
+    "properties": {
+     "publication_year": 1960,
+     "author": "Harper Lee"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "name": "Mere Christianity",
+    "entity_id": "cc664ca9-1122-497e-9a0e-4930463cbc75",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "publication_year": 1952,
+     "author": "C. S. Lewis"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:faith",
+      "name": "Faith",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.75
+    }
+   },
+   {
+    "name": "Wild: From Lost to Found",
+    "entity_id": "96c0d2d2-049b-476e-9097-8e5f066f740b",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.7,
+    "properties": {
+     "publication_year": 2012,
+     "author": "Cheryl Strayed"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:memoir",
+      "name": "Memoir",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.7
+    }
+   },
+   {
+    "name": "Poems for Every Season",
+    "entity_id": "dfe43739-802d-472a-8f89-7a108c1fa6ec",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.4,
+    "properties": {
+     "publication_year": 2005,
+     "author": "Various authors"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:poetry",
+      "name": "Poetry",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.65
+    }
+   },
+   {
+    "name": "When Breath Becomes Air",
+    "entity_id": "30f2a71b-de81-4205-a27f-9e01cf979589",
+    "types": [
+     "urn:entity:book"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "publication_year": 2016,
+     "author": "Paul Kalanithi"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:memoir",
+      "name": "Memoir",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:book",
+    "query": {
+     "affinity": 0.6
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:movie:*": {
+  "entities": [
+   {
+    "name": "It's a Wonderful Life",
+    "entity_id": "6af4b358-562b-439b-b207-87cdaa23cede",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "release_year": 1946,
+     "image": {
+      "url": "https://images.example.invalid/wonderful.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "name": "Casablanca",
+    "entity_id": "97924901-7285-4e93-955e-f602e9c066f2",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "release_year": 1942,
+     "image": {
+      "url": "https://images.example.invalid/casablanca.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.85
+    }
+   },
+   {
+    "name": "Cinema Paradiso",
+    "entity_id": "8f0f7a54-6cbb-4f86-9c51-b4677f95da25",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 1988,
+     "image": {
+      "url": "https://images.example.invalid/paradiso.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "name": "Singin' in the Rain",
+    "entity_id": "fd4c33ea-4976-41d6-a2fa-2031665cbeeb",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.8,
+    "properties": {
+     "release_year": 1952,
+     "image": {
+      "url": "https://images.example.invalid/singin.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.75
+    }
+   },
+   {
+    "name": "The Sandlot",
+    "entity_id": "42c3af0f-81be-4f35-b596-b484570b6917",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.75,
+    "properties": {
+     "release_year": 1993,
+     "image": {
+      "url": "https://images.example.invalid/sandlot.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:baseball",
+      "name": "Baseball",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.7
+    }
+   },
+   {
+    "name": "My Neighbor Totoro",
+    "entity_id": "ee5a932f-b10b-43e3-90c0-381f6fd0fb2c",
+    "types": [
+     "urn:entity:movie"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "release_year": 1988,
+     "image": {
+      "url": "https://images.example.invalid/totoro.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:animation",
+      "name": "Animation",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:movie",
+    "query": {
+     "affinity": 0.65
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:tv_show:*": {
+  "entities": [
+   {
+    "name": "I Love Lucy",
+    "entity_id": "593c3f9d-08a7-4faf-9f83-ecab41aa4669",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.9,
+    "properties": {
+     "release_year": 1951,
+     "image": {
+      "url": "https://images.example.invalid/lucy.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "name": "M*A*S*H",
+    "entity_id": "b4f03d00-e9db-42f7-9281-d02796c71d15",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.85,
+    "properties": {
+     "release_year": 1972,
+     "image": {
+      "url": "https://images.example.invalid/mash.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.85
+    }
+   },
+   {
+    "name": "Little House on the Prairie",
+    "entity_id": "a992fab9-fd4c-408c-9212-1ab24d3fe6d6",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.75,
+    "properties": {
+     "release_year": 1974,
+     "image": {
+      "url": "https://images.example.invalid/prairie.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:small_town",
+      "name": "Small town",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.8
+    }
+   },
+   {
+    "name": "Cheers",
+    "entity_id": "3a2db9a6-6892-4632-b7ef-335c1bb88541",
+    "types": [
+     "urn:entity:tv_show"
+    ],
+    "popularity": 0.88,
+    "properties": {
+     "release_year": 1982,
+     "image": {
+      "url": "https://images.example.invalid/cheers.jpg"
+     }
+    },
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:sitcom",
+      "name": "Sitcom",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:tv_show",
+    "query": {
+     "affinity": 0.75
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:podcast:*": {
+  "entities": [
+   {
+    "name": "Story Hour: Tales Worth Telling",
+    "entity_id": "c92fa41d-78b5-450b-b22d-1c6f26a478b7",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.4,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:memoir",
+      "name": "Memoir",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "name": "Songs We Love: A Music Memory Show",
+    "entity_id": "40adc35d-f93f-4c88-b513-7ac6de740a74",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "popularity": 0.4,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:podcast",
+    "query": {
+     "affinity": 0.85
+    }
+   }
+  ]
+ },
+ "insights:urn:entity:brand:*": {
+  "entities": [
+   {
+    "name": "Levi's",
+    "entity_id": "fafd642e-7b9f-4588-8c7a-f52d2eb97517",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.8,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.9
+    }
+   },
+   {
+    "name": "Coca-Cola",
+    "entity_id": "87b68c87-cf6d-48b5-81c8-37dedd2ac4ce",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.9,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.85
+    }
+   },
+   {
+    "name": "Polaroid",
+    "entity_id": "43385b34-b48d-4acd-a813-6f50e5c85975",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "popularity": 0.6,
+    "properties": {},
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:nostalgia",
+      "name": "Nostalgia",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "subtype": "urn:entity:brand",
+    "query": {
+     "affinity": 0.8
+    }
+   }
+  ]
+ },
+ "insights:urn:tag:*": {
+  "tags": [
+   {
+    "tag_id": "urn:tag:keyword:media:nostalgia",
+    "name": "Nostalgia",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.85
+    }
+   },
+   {
+    "tag_id": "urn:tag:style:qloo:warm",
+    "name": "Warm",
+    "subtype": "urn:tag:style:qloo",
+    "types": [
+     "urn:tag:style:qloo"
+    ],
+    "query": {
+     "affinity": 0.78
+    }
+   },
+   {
+    "tag_id": "urn:tag:keyword:media:small_town",
+    "name": "Small town",
+    "subtype": "urn:tag:keyword:media",
+    "types": [
+     "urn:tag:keyword:media"
+    ],
+    "query": {
+     "affinity": 0.71
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:folk",
+    "name": "Folk",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.64
+    }
+   },
+   {
+    "tag_id": "urn:tag:genre:media:memoir",
+    "name": "Memoir",
+    "subtype": "urn:tag:genre:media",
+    "types": [
+     "urn:tag:genre:media"
+    ],
+    "query": {
+     "affinity": 0.57
+    }
+   }
+  ]
+ },
+ "insights:urn:demographics:*": {
+  "demographics": [
+   {
+    "entity_id": "*",
+    "query": {
+     "age": {
+      "24_and_younger": -0.1,
+      "25_to_29": -0.05,
+      "30_to_34": 0,
+      "35_to_44": 0.08,
+      "45_to_54": 0.15,
+      "55_and_older": 0.2
+     },
+     "gender": {
+      "male": 0.02,
+      "female": -0.02
+     }
+    }
+   }
+  ]
+ }
+}

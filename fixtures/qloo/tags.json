@@ -1,0 +1,246 @@
+{
+ "carne asada": [
+  {
+   "id": "urn:tag:cuisine:place:mexican",
+   "name": "Mexican",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "mexican": [
+  {
+   "id": "urn:tag:cuisine:place:mexican",
+   "name": "Mexican",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "bass fishing": [
+  {
+   "id": "urn:tag:hobby:fishing",
+   "name": "Fishing",
+   "type": "urn:tag:hobby"
+  }
+ ],
+ "fishing": [
+  {
+   "id": "urn:tag:hobby:fishing",
+   "name": "Fishing",
+   "type": "urn:tag:hobby"
+  }
+ ],
+ "black coffee": [
+  {
+   "id": "urn:tag:cuisine:place:diner",
+   "name": "Diner",
+   "type": "urn:tag:cuisine"
+  },
+  {
+   "id": "urn:tag:category:place:coffee_shop",
+   "name": "Coffee shop",
+   "type": "urn:tag:category"
+  }
+ ],
+ "diner": [
+  {
+   "id": "urn:tag:cuisine:place:diner",
+   "name": "Diner",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "coffee": [
+  {
+   "id": "urn:tag:category:place:coffee_shop",
+   "name": "Coffee shop",
+   "type": "urn:tag:category"
+  },
+  {
+   "id": "urn:tag:cuisine:place:diner",
+   "name": "Diner",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "thai": [
+  {
+   "id": "urn:tag:cuisine:place:thai",
+   "name": "Thai",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "thai food": [
+  {
+   "id": "urn:tag:cuisine:place:thai",
+   "name": "Thai",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "pinball": [
+  {
+   "id": "urn:tag:hobby:pinball",
+   "name": "Pinball",
+   "type": "urn:tag:hobby"
+  },
+  {
+   "id": "urn:tag:category:place:arcade",
+   "name": "Arcade",
+   "type": "urn:tag:category"
+  }
+ ],
+ "record shops": [
+  {
+   "id": "urn:tag:hobby:record_collecting",
+   "name": "Record collecting",
+   "type": "urn:tag:hobby"
+  },
+  {
+   "id": "urn:tag:category:place:record_store",
+   "name": "Record store",
+   "type": "urn:tag:category"
+  }
+ ],
+ "rose garden": [
+  {
+   "id": "urn:tag:hobby:gardening",
+   "name": "Gardening",
+   "type": "urn:tag:hobby"
+  }
+ ],
+ "gardening": [
+  {
+   "id": "urn:tag:hobby:gardening",
+   "name": "Gardening",
+   "type": "urn:tag:hobby"
+  }
+ ],
+ "catfish": [
+  {
+   "id": "urn:tag:cuisine:place:southern",
+   "name": "Southern and soul food",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "fried catfish": [
+  {
+   "id": "urn:tag:cuisine:place:southern",
+   "name": "Southern and soul food",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "soul food": [
+  {
+   "id": "urn:tag:cuisine:place:southern",
+   "name": "Southern and soul food",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "greens": [
+  {
+   "id": "urn:tag:cuisine:place:southern",
+   "name": "Southern and soul food",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "barbecue": [
+  {
+   "id": "urn:tag:cuisine:place:barbecue",
+   "name": "Barbecue",
+   "type": "urn:tag:cuisine"
+  }
+ ],
+ "caterer": [
+  {
+   "id": "urn:tag:category:place:caterer",
+   "name": "Caterer",
+   "type": "urn:tag:category"
+  }
+ ],
+ "catering": [
+  {
+   "id": "urn:tag:category:place:caterer",
+   "name": "Caterer",
+   "type": "urn:tag:category"
+  }
+ ],
+ "restaurant": [
+  {
+   "id": "urn:tag:category:place:restaurant",
+   "name": "Restaurant",
+   "type": "urn:tag:category"
+  }
+ ],
+ "event venue": [
+  {
+   "id": "urn:tag:category:place:event_venue",
+   "name": "Event venue",
+   "type": "urn:tag:category"
+  }
+ ],
+ "banquet hall": [
+  {
+   "id": "urn:tag:category:place:banquet_hall",
+   "name": "Banquet hall",
+   "type": "urn:tag:category"
+  }
+ ],
+ "community center": [
+  {
+   "id": "urn:tag:category:place:community_center",
+   "name": "Community center",
+   "type": "urn:tag:category"
+  }
+ ],
+ "church hall": [
+  {
+   "id": "urn:tag:category:place:church_hall",
+   "name": "Church hall",
+   "type": "urn:tag:category"
+  }
+ ],
+ "fellowship hall": [
+  {
+   "id": "urn:tag:category:place:church_hall",
+   "name": "Church hall",
+   "type": "urn:tag:category"
+  }
+ ],
+ "park": [
+  {
+   "id": "urn:tag:category:place:park",
+   "name": "Park",
+   "type": "urn:tag:category"
+  }
+ ],
+ "bar": [
+  {
+   "id": "urn:tag:category:place:bar",
+   "name": "Bar",
+   "type": "urn:tag:category"
+  }
+ ],
+ "nightclub": [
+  {
+   "id": "urn:tag:category:place:nightclub",
+   "name": "Nightclub",
+   "type": "urn:tag:category"
+  }
+ ],
+ "brewery": [
+  {
+   "id": "urn:tag:category:place:brewery",
+   "name": "Brewery",
+   "type": "urn:tag:category"
+  }
+ ],
+ "rooftop": [
+  {
+   "id": "urn:tag:category:place:rooftop",
+   "name": "Rooftop",
+   "type": "urn:tag:category"
+  }
+ ],
+ "hiking trail": [
+  {
+   "id": "urn:tag:category:place:hiking_trail",
+   "name": "Hiking trail",
+   "type": "urn:tag:category"
+  }
+ ]
+}
