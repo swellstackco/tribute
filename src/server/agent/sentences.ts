@@ -7,6 +7,8 @@ import type { SectionName } from "../tools/index.js";
  * "{name}" is replaced with the first name (or "them") when the plan is built.
  * Short words and short sentences keep these at a 4th to 6th grade level.
  */
+const joinAnd = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs.at(-1)}`);
+
 export function plannerSentence(section: SectionName, s: RunState): string {
   const a = (xs: { name: string }[], i: number) => xs[i]?.name;
   switch (section) {
@@ -32,7 +34,7 @@ export function plannerSentence(section: SectionName, s: RunState): string {
     case "screen": {
       const eras = erasFrom(allEraItems(s));
       const m = screenItems(s)[0];
-      const era = eras.length ? `Look for photos from the ${eras.map((e) => `${e}s`).join(", ")}.` : "Look for photos from the happy years.";
+      const era = eras.length ? `Look for photos from the ${joinAnd(eras.map((e) => `${e}s`))}.` : "Look for photos from the happy years.";
       return m ? `${era} ${m.name} is a fun one to show.` : era;
     }
     case "program":

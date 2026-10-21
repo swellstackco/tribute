@@ -25,6 +25,7 @@ export interface RunState {
   recAttempted: Set<string>;
   notes: string[];
   critiqued: boolean;
+  programNotes: string[];
 }
 
 export function newRunState(input: RunInput, ctx: ToolContext): RunState {
@@ -32,7 +33,7 @@ export function newRunState(input: RunInput, ctx: ToolContext): RunState {
   for (const l of input.loves) love[l] = { state: "pending" };
   return {
     input, ctx, steps: [], love, described: false, tagsDone: false, tagLookups: {}, question: null, answered: false,
-    redescribed: false, tagProfile: null, audience: null, recs: {}, recAttempted: new Set(), notes: [], critiqued: false,
+    redescribed: false, tagProfile: null, audience: null, recs: {}, recAttempted: new Set(), notes: [], critiqued: false, programNotes: [],
   };
 }
 

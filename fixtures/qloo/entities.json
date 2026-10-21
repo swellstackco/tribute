@@ -1134,7 +1134,7 @@
   ]
  },
  "838ab5af-abe7-458c-9b77-316dec2a2842": {
-  "name": "The Outlaw Josey Wales (film)",
+  "name": "The Outlaw Josey Wales",
   "entity_id": "838ab5af-abe7-458c-9b77-316dec2a2842",
   "types": [
    "urn:entity:movie"
@@ -1270,7 +1270,7 @@
   ]
  },
  "dad4ce5f-9dba-4ac1-87a9-7df23e4679bb": {
-  "name": "A River Runs Through It (film)",
+  "name": "A River Runs Through It",
   "entity_id": "dad4ce5f-9dba-4ac1-87a9-7df23e4679bb",
   "types": [
    "urn:entity:movie"
@@ -1453,7 +1453,7 @@
   ]
  },
  "96c1a2c6-ce83-4d61-a5f5-d377650f9705": {
-  "name": "The Color Purple (film)",
+  "name": "The Color Purple",
   "entity_id": "96c1a2c6-ce83-4d61-a5f5-d377650f9705",
   "types": [
    "urn:entity:movie"
@@ -1500,7 +1500,7 @@
   ]
  },
  "d7f78a37-2158-43f7-9e08-6e5fd4371136": {
-  "name": "To Kill a Mockingbird (film)",
+  "name": "To Kill a Mockingbird",
   "entity_id": "d7f78a37-2158-43f7-9e08-6e5fd4371136",
   "types": [
    "urn:entity:movie"

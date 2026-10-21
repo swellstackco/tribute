@@ -137,13 +137,13 @@ E("b_gen5", "Poems for Every Season", "book", 0.4, { publication_year: 2005, aut
 E("b_gen6", "When Breath Becomes Air", "book", 0.8, { publication_year: 2016, author: "Paul Kalanithi" }, ["memoir"]);
 // movies
 E("m_unforgiven", "Unforgiven", "movie", 0.8, { release_year: 1992, image: img("unforgiven") }, ["western", "drama"]);
-E("m_josey", "The Outlaw Josey Wales (film)", "movie", 0.66, { release_year: 1976, image: img("josey") }, ["western"]);
+E("m_josey", "The Outlaw Josey Wales", "movie", 0.66, { release_year: 1976, image: img("josey") }, ["western"]);
 E("m_gbu", "The Good, the Bad and the Ugly", "movie", 0.9, { release_year: 1966, image: img("gbu") }, ["western"]);
 E("m_gran", "Gran Torino", "movie", 0.82, { release_year: 2008, image: img("gran") }, ["drama"]);
 E("m_walk", "Walk the Line", "movie", 0.8, { release_year: 2005, image: img("walk") }, ["drama", "country"]);
 E("m_bull", "Bull Durham", "movie", 0.7, { release_year: 1988, image: img("bull") }, ["baseball"]);
 E("m_field", "Field of Dreams", "movie", 0.82, { release_year: 1989, image: img("field") }, ["baseball", "kwnostalgia"]);
-E("m_river", "A River Runs Through It (film)", "movie", 0.7, { release_year: 1992, image: img("river") }, ["hobbyfish"]);
+E("m_river", "A River Runs Through It", "movie", 0.7, { release_year: 1992, image: img("river") }, ["hobbyfish"]);
 E("m_spirited", "Spirited Away", "movie", 0.92, { release_year: 2001, image: img("spirited") }, ["anime", "fantasy"]);
 E("m_totoro", "My Neighbor Totoro", "movie", 0.88, { release_year: 1988, image: img("totoro") }, ["anime", "kwnostalgia"]);
 E("m_kiki", "Kiki's Delivery Service", "movie", 0.8, { release_year: 1989, image: img("kiki") }, ["anime"]);
@@ -151,9 +151,9 @@ E("m_ziggy", "Ziggy Stardust and the Spiders from Mars", "movie", 0.5, { release
 E("m_labyrinth", "Labyrinth", "movie", 0.78, { release_year: 1986, image: img("labyrinth") }, ["fantasy"]);
 E("m_bladerunner", "Blade Runner", "movie", 0.9, { release_year: 1982, image: img("bladerunner") }, ["scifi"]);
 E("m_pinball", "Tommy", "movie", 0.6, { release_year: 1975, image: img("tommy") }, ["artrock", "hobbypinball"]);
-E("m_colorp", "The Color Purple (film)", "movie", 0.85, { release_year: 1985, image: img("colorp") }, ["drama"]);
+E("m_colorp", "The Color Purple", "movie", 0.85, { release_year: 1985, image: img("colorp") }, ["drama"]);
 E("m_steel", "Steel Magnolias", "movie", 0.8, { release_year: 1989, image: img("steel") }, ["drama", "kwsmalltown"]);
-E("m_mocking", "To Kill a Mockingbird (film)", "movie", 0.88, { release_year: 1962, image: img("mocking") }, ["drama"]);
+E("m_mocking", "To Kill a Mockingbird", "movie", 0.88, { release_year: 1962, image: img("mocking") }, ["drama"]);
 E("m_ghostmovie", "Ghost", "movie", 0.66, { release_year: 1990, image: img("ghostfilm") }, ["drama"]);
 E("m_g1", "It's a Wonderful Life", "movie", 0.9, { release_year: 1946, image: img("wonderful") }, ["kwnostalgia", "kwsmalltown"]);
 E("m_g2", "The Sandlot", "movie", 0.75, { release_year: 1993, image: img("sandlot") }, ["baseball", "kwnostalgia"]);
