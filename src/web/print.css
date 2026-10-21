@@ -1,0 +1,46 @@
+@page { size: portrait; margin: 0.7in; }
+@page booklet { size: landscape; margin: 0.5in; }
+
+@media print {
+  html, body { background: #fff !important; background-image: none !important; font-size: 11.5pt; color: #000; display: block; min-height: 0; }
+  header.site, footer.site, .skip, .no-print, nav, .actions, .made, .whylink { display: none !important; }
+  .page { max-width: none; padding: 0; }
+  a { color: inherit; text-decoration: none; }
+  .pick, .card, .ev tr, .order li { break-inside: avoid; page-break-inside: avoid; }
+  .sec { break-inside: auto; }
+  h2, h3 { break-after: avoid; }
+
+  /* Tribute page: print the folded booklet only */
+  .page.tribute > *:not(.booklet) { display: none !important; }
+  .booklet { display: block !important; page: booklet; }
+  .sheet { display: grid; grid-template-columns: 1fr 1fr; gap: 0; height: 6.9in; break-after: page; page-break-after: always; break-inside: avoid; }
+  .sheet:last-child { break-after: auto; page-break-after: auto; }
+  .panel { padding: 0.35in 0.4in; overflow: hidden; border-right: 1px dashed #999; }
+  .panel:last-child { border-right: 0; }
+  .panel h3 { font-size: 16pt; margin: 0.15in 0 0; }
+  .panel .orn { margin: 0.1in auto; }
+  .panel .orn::before, .panel .orn::after { background: #555; }
+  .panel .dia { background: #000; }
+  .bk-cover { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 1px solid #000; outline: 1px solid #000; outline-offset: -8px; }
+  .bk-cover h1 { font-size: 40pt; }
+  .bk-cover .kicker { color: #000; }
+  .bk-city { font-family: var(--display); font-size: 16pt; margin: 0.1in 0; }
+  .bk-eras { font-family: var(--display); font-size: 15pt; }
+  .bk-list { list-style: none; padding: 0; margin: 0.1in 0; font-size: 10pt; line-height: 1.35; }
+  .bk-list li { margin-bottom: 0.08in; }
+  .url { font-family: var(--meta); font-size: 7.5pt; word-break: break-all; }
+  .bk-note { font-style: italic; font-size: 10pt; }
+  .booklet .order { margin: 0.1in 0; }
+  .booklet .o-label { font-size: 13pt; }
+  .booklet .o-detail { font-size: 10pt; color: #000; }
+
+  /* Why page prints as its own portrait document */
+  .why .btn { display: none; }
+  .age li { grid-template-columns: 8cm 1fr 1.5cm; }
+  .fill { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .ev { display: table !important; }
+  .ev thead { display: table-header-group !important; }
+  .ev tbody { display: table-row-group !important; }
+  .ev tr { display: table-row !important; }
+  .ev th, .ev td { display: table-cell !important; width: auto; }
+}

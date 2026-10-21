@@ -89,4 +89,5 @@ export interface RunView {
   plan: Plan | null;
   error?: string;
   notice?: string;
+  example?: string; // slug when this run is one of the demo profiles
 }

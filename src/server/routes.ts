@@ -10,6 +10,10 @@ const clientIp = (req: Request) =>
 export function mountRoutes(app: Express, sv: Services) {
   const { orchestrator: orc, limiter } = sv;
   const api = express.Router();
+  const withExample = (v: any) => {
+    const r = sv.db.prepare("SELECT slug FROM examples WHERE run_id = ?").get(v.id) as { slug: string } | undefined;
+    return r ? { ...v, example: r.slug } : v;
+  };
 
   // Rate limit, then start. Identical input replays for free and never counts.
   function startRun(req: Request, res: Response, input: ReturnType<typeof Object>) {
@@ -40,7 +44,7 @@ export function mountRoutes(app: Express, sv: Services) {
     if (!row) return res.status(404).json({ error: "We could not find that example." });
     const v = orc.view(row.run_id);
     if (!v) return res.status(404).json({ error: "We could not find that example." });
-    res.json(v);
+    res.json(withExample(v));
   });
 
   api.post("/tribute/example/:slug/rebuild", (req, res) => {
@@ -58,7 +62,7 @@ export function mountRoutes(app: Express, sv: Services) {
   api.get("/tribute/:id", (req, res) => {
     const v = orc.view(req.params.id);
     if (!v) return res.status(404).json({ error: "We could not find that tribute." });
-    res.json(v);
+    res.json(withExample(v));
   });
 
   api.get("/tribute/:id/events", (req, res) => {
