@@ -1,4 +1,5 @@
 import type { Item } from "../tools/index.js";
+import { hasBarTag } from "./constraintTags.js";
 import { CUISINE_PREF, VENUE_PREF, pickTag } from "../tools/clean.js";
 import { resolvedEntities, type RunState } from "./state.js";
 
@@ -52,20 +53,26 @@ export function foodItems(s: RunState): Item[] {
   const places = (s.recs.food ?? []).slice(0, 5);
   return dedupe([...cuisineTags(s).slice(0, 2), ...places]);
 }
-// Real Qloo "event venue" results include escape rooms and arcades. Prefer places whose main category fits a gathering.
-const VENUE_GOOD = ["banquet_hall", "community_center", "wedding_venue", "church", "event_venue", "park", "restaurant", "hotel"];
-const VENUE_BAD = /(escape_room|amusement|arcade|laser_tag|bowling|golf|casino|night_club|nightclub|live_music_venue|childrens|sports_complex|theme_park|gym)/;
+// Real Qloo "event venue" results include arenas, casinos and hotels. A gathering needs a hall, a pavilion or a private room.
+const VENUE_GOOD = ["banquet_hall", "community_center", "wedding_venue", "church", "event_venue", "park"];
+const VENUE_BAD_CAT = /(arena|stadium|amphitheat|convention_center|casino|hotel|motel|resort|lodging|inn$|escape_room|amusement|arcade|laser_tag|bowling|golf|night_club|nightclub|live_music_venue|childrens|sports_complex|theme_park|gym)/;
+const VENUE_BAD_NAME = /(arena|stadium|amphitheat|convention center|casino|hotel|motel|\binn\b|resort|marriott|hilton|hyatt|holiday inn|suites)/i;
+const cats = (i: Item) => i.tags.map((t) => t.id.split(":").pop() ?? "");
+export const venueBad = (i: Item) => VENUE_BAD_NAME.test(i.name) || cats(i).some((c) => VENUE_BAD_CAT.test(c));
 export function venueScore(i: Item): number {
-  const cats = i.tags.map((t) => t.id.split(":").pop() ?? "");
-  if (cats.some((c) => VENUE_BAD.test(c))) return -1;
-  const idx = VENUE_GOOD.findIndex((g) => cats.includes(g));
+  if (venueBad(i)) return -1;
+  const idx = VENUE_GOOD.findIndex((g) => cats(i).includes(g));
   return idx === -1 ? 0 : VENUE_GOOD.length - idx;
 }
+const noBars = (s: RunState) => s.input.constraints.faith === "faith" || s.input.constraints.guests === "older";
+const privateDining = (i: Item) => i.tags.some((t) => /(banquet|private_dining)/.test(t.id)) && cats(i).some((c) => /restaurant/.test(c));
 export function venueItems(s: RunState): Item[] {
   const list = s.recs.venue ?? [];
-  const ranked = list.map((i, n) => ({ i, n, sc: venueScore(i) })).sort((a, b) => b.sc - a.sc || a.n - b.n);
-  const good = ranked.filter((r) => r.sc >= 0).map((r) => r.i);
-  return (good.length >= 3 ? good : ranked.map((r) => r.i)).slice(0, 5);
+  const good = list.map((i, n) => ({ i, n, sc: venueScore(i) })).filter((r) => r.sc >= 0).sort((a, b) => b.sc - a.sc || a.n - b.n).map((r) => r.i);
+  if (good.length >= 3) return good.slice(0, 5);
+  // Too few real halls: add restaurants with banquet or private dining rooms.
+  const extra = dedupe([...list, ...(s.recs.food ?? [])].filter((i) => i.kind === "entity" && !venueBad(i) && privateDining(i) && !(noBars(s) && hasBarTag(i)) && !good.some((g) => g.id === i.id)));
+  return dedupe([...good, ...extra]).slice(0, 5);
 }
 export function screenItems(s: RunState): Item[] {
   const movies = dedupe([...typed(s, "movie"), ...(s.recs.movie ?? [])]);

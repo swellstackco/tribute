@@ -1,5 +1,5 @@
 {
- "insights:urn:entity:artist:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:entity:artist:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "entities": [
    {
     "name": "Merle Haggard",
@@ -77,7 +77,7 @@
    },
    {
     "name": "Buck Owens",
-    "entity_id": "a350f852-bb58-44c0-a0e5-40bd527e87f8",
+    "entity_id": "7c89c16b-99a6-4b0b-bc7d-589a23135424",
     "types": [
      "urn:entity:artist"
     ],
@@ -105,7 +105,7 @@
    },
    {
     "name": "Waylon Jennings",
-    "entity_id": "7c89c16b-99a6-4b0b-bc7d-589a23135424",
+    "entity_id": "6088f61b-30eb-4450-83af-a8845120a9fe",
     "types": [
      "urn:entity:artist"
     ],
@@ -142,7 +142,7 @@
    },
    {
     "name": "Willie Nelson",
-    "entity_id": "6088f61b-30eb-4450-83af-a8845120a9fe",
+    "entity_id": "bc0ac7b2-ffea-4dc0-b07c-08b61676ec5c",
     "types": [
      "urn:entity:artist"
     ],
@@ -179,7 +179,7 @@
    },
    {
     "name": "George Strait",
-    "entity_id": "bc0ac7b2-ffea-4dc0-b07c-08b61676ec5c",
+    "entity_id": "6921bae9-cb3b-4590-bf8b-318458c546ea",
     "types": [
      "urn:entity:artist"
     ],
@@ -207,7 +207,7 @@
    },
    {
     "name": "Kris Kristofferson",
-    "entity_id": "6921bae9-cb3b-4590-bf8b-318458c546ea",
+    "entity_id": "45d86b6d-de92-433a-9aab-5df9736697da",
     "types": [
      "urn:entity:artist"
     ],
@@ -240,7 +240,7 @@
    },
    {
     "name": "Ernest Tubb",
-    "entity_id": "45d86b6d-de92-433a-9aab-5df9736697da",
+    "entity_id": "994e61af-b4d4-4e52-b441-1748432032b3",
     "types": [
      "urn:entity:artist"
     ],
@@ -268,7 +268,7 @@
    },
    {
     "name": "Gram Parsons",
-    "entity_id": "994e61af-b4d4-4e52-b441-1748432032b3",
+    "entity_id": "0c490eab-4885-49d4-a0c5-8daba3501511",
     "types": [
      "urn:entity:artist"
     ],
@@ -296,11 +296,11 @@
    }
   ]
  },
- "insights:urn:entity:book:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:entity:book:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "entities": [
    {
     "name": "Lonesome Dove",
-    "entity_id": "0c490eab-4885-49d4-a0c5-8daba3501511",
+    "entity_id": "f4d49b79-3044-4650-907f-cdae38b5b8e6",
     "types": [
      "urn:entity:book"
     ],
@@ -326,7 +326,7 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -334,7 +334,7 @@
    },
    {
     "name": "True Grit",
-    "entity_id": "f4d49b79-3044-4650-907f-cdae38b5b8e6",
+    "entity_id": "b71f1743-f8a8-4289-b4e6-400cc76e60c2",
     "types": [
      "urn:entity:book"
     ],
@@ -355,7 +355,7 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -363,7 +363,7 @@
    },
    {
     "name": "A River Runs Through It",
-    "entity_id": "b71f1743-f8a8-4289-b4e6-400cc76e60c2",
+    "entity_id": "11854948-c749-4cc9-9aab-24eb27cbebeb",
     "types": [
      "urn:entity:book"
     ],
@@ -397,7 +397,7 @@
    },
    {
     "name": "The Old Man and the Sea",
-    "entity_id": "11854948-c749-4cc9-9aab-24eb27cbebeb",
+    "entity_id": "62c95610-e2b4-4f1a-b987-96fdb173080f",
     "types": [
      "urn:entity:book"
     ],
@@ -427,7 +427,7 @@
        "contribution": 0.6
       },
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.4
       }
      ]
@@ -435,7 +435,7 @@
    },
    {
     "name": "Of Mice and Men",
-    "entity_id": "62c95610-e2b4-4f1a-b987-96fdb173080f",
+    "entity_id": "91baea26-a40b-44c7-829e-043879afb05e",
     "types": [
      "urn:entity:book"
     ],
@@ -464,7 +464,7 @@
    },
    {
     "name": "The Outlaw Josey Wales",
-    "entity_id": "91baea26-a40b-44c7-829e-043879afb05e",
+    "entity_id": "fd9cb34a-dc48-485d-ae3a-180d72b7997f",
     "types": [
      "urn:entity:book"
     ],
@@ -485,7 +485,7 @@
      "affinity": 0.72,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -493,7 +493,7 @@
    },
    {
     "name": "Blood Meridian",
-    "entity_id": "fd9cb34a-dc48-485d-ae3a-180d72b7997f",
+    "entity_id": "b89963f7-2020-44ba-b11b-07bf0686b726",
     "types": [
      "urn:entity:book"
     ],
@@ -514,7 +514,7 @@
      "affinity": 0.6,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -522,11 +522,11 @@
    }
   ]
  },
- "insights:urn:entity:movie:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:entity:movie:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "entities": [
    {
     "name": "Unforgiven",
-    "entity_id": "b89963f7-2020-44ba-b11b-07bf0686b726",
+    "entity_id": "99539b93-d535-4477-9403-5244bd7c0054",
     "types": [
      "urn:entity:movie"
     ],
@@ -554,7 +554,7 @@
      "affinity": 0.94,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -562,7 +562,7 @@
    },
    {
     "name": "The Good, the Bad and the Ugly",
-    "entity_id": "99539b93-d535-4477-9403-5244bd7c0054",
+    "entity_id": "e75e65d7-a31f-4a3c-b377-759f377e6ae4",
     "types": [
      "urn:entity:movie"
     ],
@@ -585,7 +585,7 @@
      "affinity": 0.92,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -593,7 +593,7 @@
    },
    {
     "name": "Gran Torino",
-    "entity_id": "e75e65d7-a31f-4a3c-b377-759f377e6ae4",
+    "entity_id": "838ab5af-abe7-458c-9b77-316dec2a2842",
     "types": [
      "urn:entity:movie"
     ],
@@ -616,38 +616,7 @@
      "affinity": 0.85,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
-       "contribution": 0.6
-      }
-     ]
-    }
-   },
-   {
-    "name": "The Outlaw Josey Wales",
-    "entity_id": "838ab5af-abe7-458c-9b77-316dec2a2842",
-    "types": [
-     "urn:entity:movie"
-    ],
-    "popularity": 0.66,
-    "properties": {
-     "release_year": 1976,
-     "image": {
-      "url": "https://images.example.invalid/josey.jpg"
-     }
-    },
-    "tags": [
-     {
-      "id": "urn:tag:genre:media:western",
-      "name": "Western",
-      "type": "urn:tag:genre:media"
-     }
-    ],
-    "subtype": "urn:entity:movie",
-    "query": {
-     "affinity": 0.84,
-     "explainability": [
-      {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -719,7 +688,7 @@
      "affinity": 0.78,
      "explainability": [
       {
-       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
        "contribution": 0.6
       }
      ]
@@ -750,7 +719,7 @@
      "affinity": 0.72,
      "explainability": [
       {
-       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
        "contribution": 0.6
       }
      ]
@@ -789,7 +758,7 @@
    }
   ]
  },
- "insights:urn:entity:tv_show:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:entity:tv_show:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "entities": [
    {
     "name": "Gunsmoke",
@@ -816,7 +785,7 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -847,7 +816,7 @@
      "affinity": 0.88,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       }
      ]
@@ -926,7 +895,7 @@
    }
   ]
  },
- "insights:urn:entity:podcast:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:entity:podcast:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "entities": [
    {
     "name": "Vin Scully: Dodgers Broadcast Highlights",
@@ -953,7 +922,7 @@
      "affinity": 0.93,
      "explainability": [
       {
-       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
        "contribution": 0.6
       }
      ]
@@ -1017,7 +986,7 @@
    }
   ]
  },
- "insights:urn:entity:brand:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:entity:brand:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "entities": [
    {
     "name": "Stetson",
@@ -1039,7 +1008,7 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+       "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
        "contribution": 0.6
       },
       {
@@ -1103,7 +1072,7 @@
    }
   ]
  },
- "insights:urn:tag:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:tag:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "tags": [
    {
     "tag_id": "urn:tag:genre:media:country",
@@ -1217,7 +1186,7 @@
    }
   ]
  },
- "insights:urn:demographics:71f4001b-2b07-4ba0-811c-93d6c033cbf0,7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
+ "insights:urn:demographics:7431ef2f-0c22-4aae-892b-71fb5d66a822,883e51d3-12c7-49a5-a877-ed69aa0d425a,df2a06ee-7b98-49ff-862e-71d560625aef,eec06fed-2bd5-4856-8390-2c436ee3c59d": {
   "demographics": [
    {
     "entity_id": "7431ef2f-0c22-4aae-892b-71fb5d66a822",
@@ -1254,7 +1223,7 @@
     }
    },
    {
-    "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+    "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
     "query": {
      "age": {
       "24_and_younger": -0.31,
@@ -1271,7 +1240,7 @@
     }
    },
    {
-    "entity_id": "71f4001b-2b07-4ba0-811c-93d6c033cbf0",
+    "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
     "query": {
      "age": {
       "24_and_younger": -0.31,
@@ -1289,11 +1258,11 @@
    }
   ]
  },
- "insights:urn:entity:artist:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:entity:artist:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "entities": [
    {
     "name": "David Bowie",
-    "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+    "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
     "types": [
      "urn:entity:artist"
     ],
@@ -1318,11 +1287,11 @@
      "affinity": 0.97,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       },
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.4
       }
      ]
@@ -1330,7 +1299,7 @@
    },
    {
     "name": "Patti Smith",
-    "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+    "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
     "types": [
      "urn:entity:artist"
     ],
@@ -1355,11 +1324,11 @@
      "affinity": 0.95,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       },
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.4
       }
      ]
@@ -1392,11 +1361,11 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       },
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.4
       }
      ]
@@ -1429,11 +1398,11 @@
      "affinity": 0.87,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       },
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.4
       }
      ]
@@ -1461,7 +1430,7 @@
      "affinity": 0.85,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       }
      ]
@@ -1489,7 +1458,7 @@
      "affinity": 0.82,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       }
      ]
@@ -1517,7 +1486,7 @@
      "affinity": 0.8,
      "explainability": [
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.6
       }
      ]
@@ -1550,7 +1519,7 @@
      "affinity": 0.78,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       }
      ]
@@ -1578,7 +1547,7 @@
      "affinity": 0.72,
      "explainability": [
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.6
       }
      ]
@@ -1586,7 +1555,7 @@
    }
   ]
  },
- "insights:urn:entity:book:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:entity:book:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "entities": [
    {
     "name": "The Left Hand of Darkness",
@@ -1611,7 +1580,7 @@
      "affinity": 0.94,
      "explainability": [
       {
-       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
        "contribution": 0.6
       }
      ]
@@ -1640,7 +1609,7 @@
      "affinity": 0.92,
      "explainability": [
       {
-       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
        "contribution": 0.6
       }
      ]
@@ -1669,11 +1638,11 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.6
       },
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.4
       }
      ]
@@ -1702,11 +1671,11 @@
      "affinity": 0.88,
      "explainability": [
       {
-       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
        "contribution": 0.6
       },
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.4
       }
      ]
@@ -1735,7 +1704,7 @@
      "affinity": 0.84,
      "explainability": [
       {
-       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
        "contribution": 0.6
       }
      ]
@@ -1764,7 +1733,7 @@
      "affinity": 0.78,
      "explainability": [
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.6
       }
      ]
@@ -1772,7 +1741,7 @@
    }
   ]
  },
- "insights:urn:entity:movie:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:entity:movie:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "entities": [
    {
     "name": "Spirited Away",
@@ -1804,7 +1773,7 @@
      "affinity": 0.95,
      "explainability": [
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.6
       }
      ]
@@ -1840,7 +1809,7 @@
      "affinity": 0.93,
      "explainability": [
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.6
       }
      ]
@@ -1871,7 +1840,7 @@
      "affinity": 0.88,
      "explainability": [
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.6
       }
      ]
@@ -1902,11 +1871,11 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
        "contribution": 0.6
       },
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.4
       }
      ]
@@ -1937,7 +1906,7 @@
      "affinity": 0.84,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       }
      ]
@@ -1973,11 +1942,11 @@
      "affinity": 0.7,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       },
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.4
       }
      ]
@@ -1985,11 +1954,11 @@
    }
   ]
  },
- "insights:urn:entity:tv_show:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:entity:tv_show:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "entities": [
    {
     "name": "The X-Files",
-    "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+    "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
     "types": [
      "urn:entity:tv_show"
     ],
@@ -2017,7 +1986,7 @@
      "affinity": 0.96,
      "explainability": [
       {
-       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
        "contribution": 0.6
       }
      ]
@@ -2053,7 +2022,7 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
        "contribution": 0.6
       }
      ]
@@ -2084,7 +2053,7 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
        "contribution": 0.6
       }
      ]
@@ -2115,7 +2084,7 @@
      "affinity": 0.74,
      "explainability": [
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.6
       }
      ]
@@ -2123,7 +2092,7 @@
    }
   ]
  },
- "insights:urn:entity:podcast:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:entity:podcast:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "entities": [
    {
     "name": "The Ghibli Cast",
@@ -2145,7 +2114,7 @@
      "affinity": 0.85,
      "explainability": [
       {
-       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
        "contribution": 0.6
       }
      ]
@@ -2171,7 +2140,7 @@
      "affinity": 0.82,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       }
      ]
@@ -2179,7 +2148,7 @@
    }
   ]
  },
- "insights:urn:entity:brand:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:entity:brand:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "entities": [
    {
     "name": "Powell's Books",
@@ -2201,11 +2170,11 @@
      "affinity": 0.88,
      "explainability": [
       {
-       "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+       "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
        "contribution": 0.6
       },
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.4
       }
      ]
@@ -2231,7 +2200,7 @@
      "affinity": 0.76,
      "explainability": [
       {
-       "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
        "contribution": 0.6
       }
      ]
@@ -2257,7 +2226,7 @@
      "affinity": 0.7,
      "explainability": [
       {
-       "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+       "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
        "contribution": 0.6
       }
      ]
@@ -2265,7 +2234,7 @@
    }
   ]
  },
- "insights:urn:tag:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:tag:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "tags": [
    {
     "tag_id": "urn:tag:genre:media:art_rock",
@@ -2379,25 +2348,8 @@
    }
   ]
  },
- "insights:urn:demographics:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,deed4fac-3daa-45d1-a3d5-d1817ac527f5,df2a06ee-7b98-49ff-862e-71d560625aef,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
+ "insights:urn:demographics:2f13cba4-735f-4f79-8787-4730db503989,4ea825ed-ca16-43c4-ac23-306b8f6ab186,dc17eba5-6508-4e9a-8d8c-1325af2e6529,deed4fac-3daa-45d1-a3d5-d1817ac527f5,ed44735a-e4ff-44ee-9722-7bc11c8f9cda": {
   "demographics": [
-   {
-    "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
-    "query": {
-     "age": {
-      "24_and_younger": -0.08,
-      "25_to_29": 0.02,
-      "30_to_34": 0.12,
-      "35_to_44": 0.26,
-      "45_to_54": 0.3,
-      "55_and_older": 0.1
-     },
-     "gender": {
-      "male": 0.06,
-      "female": -0.08
-     }
-    }
-   },
    {
     "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
     "query": {
@@ -2410,7 +2362,7 @@
       "55_and_older": 0.1
      },
      "gender": {
-      "male": 0.1,
+      "male": 0.06,
       "female": -0.08
      }
     }
@@ -2427,7 +2379,7 @@
       "55_and_older": 0.1
      },
      "gender": {
-      "male": 0.06,
+      "male": 0.1,
       "female": -0.08
      }
     }
@@ -2444,13 +2396,30 @@
       "55_and_older": 0.1
      },
      "gender": {
-      "male": 0.1,
+      "male": 0.06,
       "female": -0.08
      }
     }
    },
    {
     "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+    "query": {
+     "age": {
+      "24_and_younger": -0.08,
+      "25_to_29": 0.02,
+      "30_to_34": 0.12,
+      "35_to_44": 0.26,
+      "45_to_54": 0.3,
+      "55_and_older": 0.1
+     },
+     "gender": {
+      "male": 0.1,
+      "female": -0.08
+     }
+    }
+   },
+   {
+    "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
     "query": {
      "age": {
       "24_and_younger": -0.08,
@@ -2468,11 +2437,11 @@
    }
   ]
  },
- "insights:urn:entity:artist:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:entity:artist:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "entities": [
    {
     "name": "Mahalia Jackson",
-    "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+    "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
     "types": [
      "urn:entity:artist"
     ],
@@ -2497,11 +2466,11 @@
      "affinity": 0.97,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       },
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.4
       }
      ]
@@ -2509,7 +2478,7 @@
    },
    {
     "name": "Aretha Franklin",
-    "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
     "types": [
      "urn:entity:artist"
     ],
@@ -2534,11 +2503,11 @@
      "affinity": 0.96,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       },
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.4
       }
      ]
@@ -2546,7 +2515,7 @@
    },
    {
     "name": "Dolly Parton",
-    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+    "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
     "types": [
      "urn:entity:artist"
     ],
@@ -2571,7 +2540,7 @@
      "affinity": 0.94,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -2604,11 +2573,11 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.6
       },
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.4
       }
      ]
@@ -2641,11 +2610,11 @@
      "affinity": 0.88,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       },
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.4
       }
      ]
@@ -2673,7 +2642,7 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       }
      ]
@@ -2706,7 +2675,7 @@
      "affinity": 0.84,
      "explainability": [
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.6
       }
      ]
@@ -2734,7 +2703,7 @@
      "affinity": 0.8,
      "explainability": [
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.6
       }
      ]
@@ -2762,7 +2731,7 @@
      "affinity": 0.76,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -2770,7 +2739,7 @@
    }
   ]
  },
- "insights:urn:entity:book:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:entity:book:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "entities": [
    {
     "name": "I Know Why the Caged Bird Sings",
@@ -2800,7 +2769,7 @@
      "affinity": 0.96,
      "explainability": [
       {
-       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
        "contribution": 0.6
       }
      ]
@@ -2829,7 +2798,7 @@
      "affinity": 0.93,
      "explainability": [
       {
-       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
        "contribution": 0.6
       }
      ]
@@ -2863,11 +2832,11 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
        "contribution": 0.6
       },
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.4
       }
      ]
@@ -2896,7 +2865,7 @@
      "affinity": 0.85,
      "explainability": [
       {
-       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
        "contribution": 0.6
       }
      ]
@@ -2930,7 +2899,7 @@
      "affinity": 0.82,
      "explainability": [
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.6
       }
      ]
@@ -2959,7 +2928,7 @@
      "affinity": 0.74,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       }
      ]
@@ -2967,7 +2936,7 @@
    }
   ]
  },
- "insights:urn:entity:movie:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:entity:movie:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "entities": [
    {
     "name": "The Color Purple",
@@ -2994,11 +2963,11 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+       "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
        "contribution": 0.6
       },
       {
-       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
        "contribution": 0.4
       }
      ]
@@ -3034,11 +3003,11 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       },
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.4
       }
      ]
@@ -3069,7 +3038,7 @@
      "affinity": 0.84,
      "explainability": [
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.6
       }
      ]
@@ -3105,7 +3074,7 @@
      "affinity": 0.8,
      "explainability": [
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.6
       }
      ]
@@ -3141,7 +3110,7 @@
      "affinity": 0.5,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -3149,11 +3118,11 @@
    }
   ]
  },
- "insights:urn:entity:tv_show:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:entity:tv_show:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "entities": [
    {
     "name": "The Andy Griffith Show",
-    "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+    "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
     "types": [
      "urn:entity:tv_show"
     ],
@@ -3181,7 +3150,7 @@
      "affinity": 0.97,
      "explainability": [
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.6
       }
      ]
@@ -3217,7 +3186,7 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.6
       }
      ]
@@ -3248,11 +3217,11 @@
      "affinity": 0.85,
      "explainability": [
       {
-       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+       "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
        "contribution": 0.6
       },
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.4
       }
      ]
@@ -3283,7 +3252,7 @@
      "affinity": 0.8,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -3314,7 +3283,7 @@
      "affinity": 0.72,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       }
      ]
@@ -3322,7 +3291,7 @@
    }
   ]
  },
- "insights:urn:entity:podcast:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:entity:podcast:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "entities": [
    {
     "name": "Gospel Hour Radio",
@@ -3344,7 +3313,7 @@
      "affinity": 0.9,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       }
      ]
@@ -3370,7 +3339,7 @@
      "affinity": 0.82,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -3378,7 +3347,7 @@
    }
   ]
  },
- "insights:urn:entity:brand:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:entity:brand:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "entities": [
    {
     "name": "Burpee Seeds",
@@ -3400,7 +3369,7 @@
      "affinity": 0.86,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -3426,7 +3395,7 @@
      "affinity": 0.82,
      "explainability": [
       {
-       "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+       "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
        "contribution": 0.6
       }
      ]
@@ -3452,7 +3421,7 @@
      "affinity": 0.6,
      "explainability": [
       {
-       "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+       "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
        "contribution": 0.6
       }
      ]
@@ -3460,7 +3429,7 @@
    }
   ]
  },
- "insights:urn:tag:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:tag:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "tags": [
    {
     "tag_id": "urn:tag:genre:media:gospel",
@@ -3574,25 +3543,8 @@
    }
   ]
  },
- "insights:urn:demographics:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,dc17eba5-6508-4e9a-8d8c-1325af2e6529,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
+ "insights:urn:demographics:3a8bf012-4633-4a24-b1ca-7b7646bf18bc,78b0105c-ba83-4eb0-9881-92c06facd188,82f95088-ebd0-4407-b36a-14f2e24d1e3c,b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c,fbe8b9c2-f880-442a-a495-415bcccbcccb": {
   "demographics": [
-   {
-    "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
-    "query": {
-     "age": {
-      "24_and_younger": -0.38,
-      "25_to_29": -0.3,
-      "30_to_34": -0.2,
-      "35_to_44": -0.04,
-      "45_to_54": 0.22,
-      "55_and_older": 0.52
-     },
-     "gender": {
-      "male": -0.22,
-      "female": 0.2
-     }
-    }
-   },
    {
     "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
     "query": {
@@ -3605,7 +3557,7 @@
       "55_and_older": 0.52
      },
      "gender": {
-      "male": -0.18,
+      "male": -0.22,
       "female": 0.2
      }
     }
@@ -3622,7 +3574,7 @@
       "55_and_older": 0.52
      },
      "gender": {
-      "male": -0.22,
+      "male": -0.18,
       "female": 0.2
      }
     }
@@ -3639,13 +3591,30 @@
       "55_and_older": 0.52
      },
      "gender": {
-      "male": -0.18,
+      "male": -0.22,
       "female": 0.2
      }
     }
    },
    {
     "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+    "query": {
+     "age": {
+      "24_and_younger": -0.38,
+      "25_to_29": -0.3,
+      "30_to_34": -0.2,
+      "35_to_44": -0.04,
+      "45_to_54": 0.22,
+      "55_and_older": 0.52
+     },
+     "gender": {
+      "male": -0.18,
+      "female": 0.2
+     }
+    }
+   },
+   {
+    "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
     "query": {
      "age": {
       "24_and_younger": -0.38,
@@ -3694,7 +3663,7 @@
    },
    {
     "name": "Willie Nelson",
-    "entity_id": "6088f61b-30eb-4450-83af-a8845120a9fe",
+    "entity_id": "bc0ac7b2-ffea-4dc0-b07c-08b61676ec5c",
     "types": [
      "urn:entity:artist"
     ],
@@ -3721,7 +3690,7 @@
    },
    {
     "name": "Aretha Franklin",
-    "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
     "types": [
      "urn:entity:artist"
     ],
@@ -3797,7 +3766,7 @@
    },
    {
     "name": "Dolly Parton",
-    "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+    "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
     "types": [
      "urn:entity:artist"
     ],

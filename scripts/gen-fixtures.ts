@@ -213,7 +213,7 @@ const toSearch = (e: Ent) => ({
 // ---- search fixtures ----
 const search: Record<string, unknown[]> = {};
 const S = (q: string, keys: string[]) => (search[q] = keys.map((k) => toSearch(ENT[k])));
-S("merle haggard", ["haggard"]); S("johnny cash", ["cash"]); S("clint eastwood", ["pe_eastwood"]);
+S("merle haggard", ["haggard"]); S("johnny cash", ["cash"]); S("clint eastwood", ["pe_eastwood"]); S("the outlaw josey wales", ["m_josey"]); S("outlaw josey wales", ["m_josey"]);
 S("los angeles dodgers", ["br_dodgers"]); S("dodgers", ["br_dodgers"]);
 S("david bowie", ["bowie"]); S("patti smith", ["smith"]); S("studio ghibli", ["br_ghibli"]);
 S("ursula k le guin", ["pe_leguin"]); S("the x-files", ["t_xfiles"]); S("x-files", ["t_xfiles"]);
@@ -240,13 +240,13 @@ const tagsFx: Record<string, Tag[]> = {
 // ---- insights lists, keyed by profile (profile id lists live in "signals") ----
 const lists = {
   walt: {
-    signals: ["haggard", "cash", "br_dodgers", "pe_eastwood"],
+    signals: ["haggard", "cash", "br_dodgers", "m_josey"],
     artist: [["haggard", .97, ["haggard", "cash"]], ["cash", .95, ["haggard", "cash"]], ["owens", .91, ["haggard"]], ["jennings", .88, ["haggard", "cash"]], ["nelson", .86, ["haggard", "cash"]], ["strait", .82, ["haggard"]], ["kristofferson", .79, ["cash"]], ["tubb", .74, ["haggard"]], ["parsons", .7, ["haggard"]]],
-    book: [["b_lonesome", .9, ["pe_eastwood"]], ["b_trueg", .86, ["pe_eastwood"]], ["b_river", .83, ["haggard"]], ["b_old", .8, ["haggard", "pe_eastwood"]], ["b_ofmice", .76, ["cash"]], ["b_rascal", .72, ["pe_eastwood"]], ["b_ox", .6, ["pe_eastwood"]]],
-    movie: [["m_unforgiven", .94, ["pe_eastwood"]], ["m_gbu", .92, ["pe_eastwood"]], ["m_gran", .85, ["pe_eastwood"]], ["m_josey", .84, ["pe_eastwood"]], ["m_walk", .8, ["cash"]], ["m_field", .78, ["br_dodgers"]], ["m_bull", .72, ["br_dodgers"]], ["m_river", .7, ["haggard"]]],
-    tv_show: [["t_gunsmoke", .9, ["pe_eastwood"]], ["t_rawhide", .88, ["pe_eastwood"]], ["t_bonanza", .82, ["haggard"]], ["t_hee", .75, ["haggard", "cash"]]],
+    book: [["b_lonesome", .9, ["m_josey"]], ["b_trueg", .86, ["m_josey"]], ["b_river", .83, ["haggard"]], ["b_old", .8, ["haggard", "m_josey"]], ["b_ofmice", .76, ["cash"]], ["b_rascal", .72, ["m_josey"]], ["b_ox", .6, ["m_josey"]]],
+    movie: [["m_unforgiven", .94, ["m_josey"]], ["m_gbu", .92, ["m_josey"]], ["m_gran", .85, ["m_josey"]], ["m_walk", .8, ["cash"]], ["m_field", .78, ["br_dodgers"]], ["m_bull", .72, ["br_dodgers"]], ["m_river", .7, ["haggard"]]],
+    tv_show: [["t_gunsmoke", .9, ["m_josey"]], ["t_rawhide", .88, ["m_josey"]], ["t_bonanza", .82, ["haggard"]], ["t_hee", .75, ["haggard", "cash"]]],
     podcast: [["p_scully", .93, ["br_dodgers"]], ["p_opry", .84, ["haggard", "cash"]], ["p_fishing", .75, ["haggard"]]],
-    brand: [["br_stetson", .86, ["pe_eastwood", "haggard"]], ["br_wrangler", .8, ["haggard"]], ["br_shimano", .7, ["haggard"]]],
+    brand: [["br_stetson", .86, ["m_josey", "haggard"]], ["br_wrangler", .8, ["haggard"]], ["br_shimano", .7, ["haggard"]]],
     tag: [["country", .96], ["outlaw", .92], ["western", .9], ["kwnostalgia", .84], ["baseball", .8], ["hobbyfish", .78], ["kwroad", .74], ["styleraw", .7], ["stylewarm", .66], ["kwsmalltown", .6]],
     age: { "24_and_younger": -.31, "25_to_29": -.22, "30_to_34": -.12, "35_to_44": .05, "45_to_54": .24, "55_and_older": .41 }, male: .26,
   },

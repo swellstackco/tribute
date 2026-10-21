@@ -67,10 +67,56 @@
    ]
   }
  ],
+ "the outlaw josey wales": [
+  {
+   "name": "The Outlaw Josey Wales",
+   "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+   "types": [
+    "urn:entity:movie"
+   ],
+   "popularity": 0.66,
+   "properties": {
+    "release_year": 1976,
+    "image": {
+     "url": "https://images.example.invalid/josey.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:western",
+     "name": "Western",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
+ "outlaw josey wales": [
+  {
+   "name": "The Outlaw Josey Wales",
+   "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+   "types": [
+    "urn:entity:movie"
+   ],
+   "popularity": 0.66,
+   "properties": {
+    "release_year": 1976,
+    "image": {
+     "url": "https://images.example.invalid/josey.jpg"
+    }
+   },
+   "tags": [
+    {
+     "id": "urn:tag:genre:media:western",
+     "name": "Western",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ],
  "los angeles dodgers": [
   {
    "name": "Los Angeles Dodgers",
-   "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+   "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
    "types": [
     "urn:entity:brand"
    ],
@@ -88,7 +134,7 @@
  "dodgers": [
   {
    "name": "Los Angeles Dodgers",
-   "entity_id": "eec06fed-2bd5-4856-8390-2c436ee3c59d",
+   "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
    "types": [
     "urn:entity:brand"
    ],
@@ -106,7 +152,7 @@
  "david bowie": [
   {
    "name": "David Bowie",
-   "entity_id": "df2a06ee-7b98-49ff-862e-71d560625aef",
+   "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
    "types": [
     "urn:entity:artist"
    ],
@@ -131,7 +177,7 @@
  "patti smith": [
   {
    "name": "Patti Smith",
-   "entity_id": "4ea825ed-ca16-43c4-ac23-306b8f6ab186",
+   "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
    "types": [
     "urn:entity:artist"
    ],
@@ -156,7 +202,7 @@
  "studio ghibli": [
   {
    "name": "Studio Ghibli",
-   "entity_id": "2f13cba4-735f-4f79-8787-4730db503989",
+   "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
    "types": [
     "urn:entity:brand"
    ],
@@ -174,7 +220,7 @@
  "ursula k le guin": [
   {
    "name": "Ursula K. Le Guin",
-   "entity_id": "ed44735a-e4ff-44ee-9722-7bc11c8f9cda",
+   "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
    "types": [
     "urn:entity:person"
    ],
@@ -192,7 +238,7 @@
  "the x-files": [
   {
    "name": "The X-Files",
-   "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+   "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
    "types": [
     "urn:entity:tv_show"
    ],
@@ -220,7 +266,7 @@
  "x-files": [
   {
    "name": "The X-Files",
-   "entity_id": "deed4fac-3daa-45d1-a3d5-d1817ac527f5",
+   "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
    "types": [
     "urn:entity:tv_show"
    ],
@@ -248,7 +294,7 @@
  "mahalia jackson": [
   {
    "name": "Mahalia Jackson",
-   "entity_id": "dc17eba5-6508-4e9a-8d8c-1325af2e6529",
+   "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
    "types": [
     "urn:entity:artist"
    ],
@@ -273,7 +319,7 @@
  "aretha franklin": [
   {
    "name": "Aretha Franklin",
-   "entity_id": "3a8bf012-4633-4a24-b1ca-7b7646bf18bc",
+   "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
    "types": [
     "urn:entity:artist"
    ],
@@ -298,7 +344,7 @@
  "dolly parton": [
   {
    "name": "Dolly Parton",
-   "entity_id": "78b0105c-ba83-4eb0-9881-92c06facd188",
+   "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
    "types": [
     "urn:entity:artist"
    ],
@@ -323,7 +369,7 @@
  "the andy griffith show": [
   {
    "name": "The Andy Griffith Show",
-   "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+   "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
    "types": [
     "urn:entity:tv_show"
    ],
@@ -351,7 +397,7 @@
  "andy griffith show": [
   {
    "name": "The Andy Griffith Show",
-   "entity_id": "b940a1b4-3177-4aaf-b3f4-8b81fcd5a78c",
+   "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
    "types": [
     "urn:entity:tv_show"
    ],
@@ -379,7 +425,7 @@
  "maya angelou": [
   {
    "name": "Maya Angelou",
-   "entity_id": "fbe8b9c2-f880-442a-a495-415bcccbcccb",
+   "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
    "types": [
     "urn:entity:person"
    ],
@@ -402,7 +448,7 @@
  "ghost": [
   {
    "name": "Ghost",
-   "entity_id": "82f95088-ebd0-4407-b36a-14f2e24d1e3c",
+   "entity_id": "ec21bfae-2972-41a5-97aa-cb27cdef0f29",
    "types": [
     "urn:entity:artist"
    ],
@@ -420,7 +466,7 @@
   },
   {
    "name": "Ghost",
-   "entity_id": "ec21bfae-2972-41a5-97aa-cb27cdef0f29",
+   "entity_id": "a350f852-bb58-44c0-a0e5-40bd527e87f8",
    "types": [
     "urn:entity:movie"
    ],

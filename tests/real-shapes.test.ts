@@ -57,3 +57,31 @@ describe("real-API behaviors", () => {
     expect(hasBarTag({ name: "Hall", tags: [{ id: "urn:tag:category:place:brewery", name: "Brewery" }] })).toBe(true);
   });
 });
+
+import { newRunState } from "../src/server/agent/state.js";
+import { venueItems } from "../src/server/agent/picks.js";
+import { EXAMPLES } from "../src/shared/examples.js";
+import type { Item } from "../src/server/tools/index.js";
+
+const place = (name: string, cats: string[]): Item => ({ id: name, kind: "entity", name, type: "urn:entity:place", properties: {}, tags: cats.map((c) => ({ id: `urn:tag:category:place:${c}`, name: c })) });
+
+describe("venue filter", () => {
+  const mk = (venue: Item[], food: Item[] = []) => { const s = newRunState(EXAMPLES.roz.input, newContext(stub([]))); s.recs.venue = venue; s.recs.food = food; return s; };
+  it("drops arenas, stadiums, amphitheaters, convention centers, casinos and hotels by category and by name", () => {
+    const out = venueItems(mk([
+      place("Legacy Arena", ["event_venue"]), place("Rose Stadium", ["stadium"]), place("Sunset Amphitheater", ["event_venue"]),
+      place("City Convention Center", ["event_venue"]), place("Lucky Casino", ["casino"]), place("Grand Hotel", ["hotel"]), place("Roadside Motel", ["motel"]),
+      place("Hope Fellowship Hall", ["community_center"]), place("Oak Banquet Hall", ["banquet_hall"]), place("Willow Pavilion", ["park"]),
+    ]));
+    expect(out.map((i) => i.name)).toEqual(["Oak Banquet Hall", "Hope Fellowship Hall", "Willow Pavilion"]);
+  });
+  it("falls back to restaurants with private dining when fewer than 3 halls remain", () => {
+    const rest = (n: string, extra: string) => ({ ...place(n, ["restaurant"]), tags: [{ id: "urn:tag:category:place:restaurant", name: "restaurant" }, { id: extra, name: "x" }] });
+    const out = venueItems(mk([place("Big Arena", ["arena"]), place("Only Hall", ["banquet_hall"])], [rest("Table One", "urn:tag:offerings:place:private_dining_room"), rest("Plain Diner", "urn:tag:other:x"), rest("Table Two", "urn:tag:category:place:banquet_hall")]));
+    expect(out.map((i) => i.name)).toEqual(["Only Hall", "Table One", "Table Two"]);
+  });
+  it("Walt's headline loves all match", async () => {
+    const m = await callTool("qloo_describe", { entities: EXAMPLES.walt.input.loves.filter((l) => !/fishing|carne|coffee/.test(l)) }, newContext(new (await import("../src/server/qloo/mock.js")).MockQlooClient()));
+    expect((m.results as any[]).every((r) => r.status === "ok")).toBe(true);
+  });
+});

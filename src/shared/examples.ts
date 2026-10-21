@@ -8,7 +8,7 @@ export const EXAMPLES: Record<string, Example> = {
     slug: "walt", name: "Walt Pruitt", age: 74, city: "Bakersfield, CA", blurb: "Loved Merle Haggard, bass fishing and the Dodgers.",
     input: {
       slug: "walt", firstName: "Walt", city: "Bakersfield, CA",
-      loves: ["Merle Haggard", "bass fishing", "the Los Angeles Dodgers", "carne asada", "Johnny Cash", "Clint Eastwood westerns", "black coffee at the diner"],
+      loves: ["Merle Haggard", "bass fishing", "the Los Angeles Dodgers", "carne asada", "Johnny Cash", "The Outlaw Josey Wales", "black coffee at the diner"],
       constraints: { faith: "either", budget: "middle", guests: "older" },
     },
   },
