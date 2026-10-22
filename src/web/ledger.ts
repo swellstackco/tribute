@@ -30,7 +30,7 @@ export function stepRow(s: Step): HTMLElement {
   return h("li", { class: `row ${s.source === "critique" ? "revised" : ""}`, "data-n": s.n },
     h("div", { class: "row-top" },
       h("span", { class: "tool" }, s.tool.replace(/_/g, " ")),
-      h("span", { class: `pill ${s.status}` }, s.status),
+      h("span", { class: `st ${s.status}` }, s.status.replace(/_/g, " ")),
       h("span", { class: "ms" }, `${s.ms} ms`),
     ),
     h("p", { class: "sent" }, sentText(s)),
@@ -61,7 +61,7 @@ export function liveLedger(root: HTMLElement, id: string, onDone: () => void, on
       progress.textContent = `${COPY.ledger.working} ${s.n}: ${s.summary}`;
     },
     onQuestion(q) {
-      qbox.replaceChildren(h("section", { class: "card question", "aria-labelledby": "q-h" },
+      qbox.replaceChildren(h("section", { class: "question", "aria-labelledby": "q-h" },
         h("h2", { id: "q-h", class: "label" }, COPY.ledger.waiting),
         h("p", { class: "q-text" }, q.text),
         h("div", { class: "q-opts" }, ...q.options.map((o, i) => h("button", { type: "button", class: "btn", onclick: async () => {

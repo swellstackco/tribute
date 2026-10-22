@@ -38,17 +38,19 @@ export function renderWhy(root: HTMLElement, v: RunView) {
     [COPY.tribute.sections.screen, plan.sections.screen.picks],
   ];
   const how: string[] = [plan.sections.music.how, plan.sections.readings.how, plan.sections.food.how, plan.sections.venue.how, plan.sections.screen.how];
+  const sec = (num: string, title: string, ...body: (Node | null)[]) =>
+    h("section", { class: "sec col" }, h("h2", { class: "label" }, h("span", { class: "num" }, num), title), h("div", { class: "body" }, ...body));
   root.append(h("div", { class: "page why" },
     h("p", { class: "no-print" }, h("a", { href: `#/t/${v.id}` }, `← ${W.back}`)),
     h("h1", { class: "page-title" }, W.title), ornament(), h("p", { class: "lead" }, W.lead),
-    h("section", { class: "sec" }, h("h2", { class: "label" }, W.loves), h("p", { class: "note" }, W.lovesLead),
+    sec("i", W.loves, h("p", { class: "note" }, W.lovesLead),
       h("ul", { class: "loves" }, ...plan.loves.map((l) => h("li", {}, h("span", { class: "said" }, `“${l.text}”`), h("span", { class: "arrow", "aria-hidden": "true" }, "→"),
         l.resolved ? h("span", {}, `${l.resolved.name} `, h("em", {}, `(${l.resolved.type.replace("_", " ")})`)) : h("span", { class: "note" }, W.notFound))))),
-    h("section", { class: "sec" }, h("h2", { class: "label" }, W.vibe),
+    sec("ii", W.vibe,
       h("ul", { class: "tags big" }, ...plan.profile.tags.slice(0, 12).map((t) => h("li", {}, `${t.name} ${t.affinity.toFixed(2)}`))),
       plan.profile.eras.length ? h("p", { class: "note" }, `${COPY.tribute.eras}: ${plan.profile.eras.map((d) => `${d}s`).join(", ")}`) : null),
-    h("section", { class: "sec" }, h("h2", { class: "label" }, W.audience), audience(plan)),
-    h("section", { class: "sec" }, h("h2", { class: "label" }, W.picks),
+    sec("iii", W.audience, audience(plan)),
+    sec("iv", W.picks,
       ...secs.map(([title, picks], i) => h("div", { class: "ev-block" },
         h("h3", { class: "sub" }, title), h("p", { class: "note" }, how[i]),
         h("table", { class: "ev" }, h("thead", {}, h("tr", {}, h("th", { scope: "col" }, "Pick"), h("th", { scope: "col" }, "Because"), h("th", { scope: "col" }, "Fit"), h("th", { scope: "col" }, "Tags"))),

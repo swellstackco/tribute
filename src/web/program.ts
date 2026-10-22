@@ -21,37 +21,36 @@ export function pickCard(p: Pick): HTMLElement {
   const links = h("p", { class: "links" });
   if (p.links.apple) links.append(h("a", { href: p.links.apple, target: "_blank", rel: "noopener" }, T.apple), h("a", { href: p.links.spotify, target: "_blank", rel: "noopener" }, T.spotify));
   if (p.links.map) links.append(h("a", { href: p.links.map, target: "_blank", rel: "noopener" }, T.map));
-  const because = p.mentioned
-    ? `${T.because}: ${T.named}`
-    : `${T.because}: ${p.why.map((w) => strip(w.signal)).join(", ")}`;
+  const because = h("p", { class: "because" }, `${T.because}: `, h("b", {}, p.mentioned ? T.named : p.why.map((w) => strip(w.signal)).join(", ")));
   const fit = p.affinity !== undefined
-    ? h("div", { class: "fit", role: "img", "aria-label": `${T.fit} ${p.affinity.toFixed(2)} out of 1` },
+    ? h("span", { class: "fit", role: "img", "aria-label": `${T.fit} ${p.affinity.toFixed(2)} out of 1` },
         h("span", { class: "fit-label" }, T.fit),
         h("span", { class: "bar" }, h("span", { class: "fill", style: { "--w": `${Math.round(p.affinity * 100)}%` } })),
         h("span", { class: "fit-num" }, p.affinity.toFixed(2)))
-    : h("div", { class: "fit" }, h("span", { class: "fit-label" }, T.fit), h("span", { class: "fit-own" }, T.ownWords));
+    : h("span", { class: "fit" }, h("span", { class: "fit-own" }, T.ownWords));
   return h("article", { class: `pick ${p.mentioned ? "typed" : "found"}` },
-    h("h3", {}, p.name),
+    h("div", { class: "pick-head" }, h("h3", {}, p.name), h("span", { class: "leader", "aria-hidden": "true" }), fit),
     p.detail ? h("p", { class: "detail" }, p.detail) : null,
-    links.childNodes.length ? links : null,
-    h("p", { class: "because" }, because),
-    fit,
+    because,
     p.tags.length ? h("ul", { class: "tags", "aria-label": "Tags" }, ...p.tags.map((t) => h("li", {}, t.name))) : null,
-    !p.mentioned ? h("p", { class: "unmentioned" }, h("span", { class: "dia", "aria-hidden": "true" }), T.unmentioned) : null,
+    links.childNodes.length ? links : null,
+    !p.mentioned ? h("p", { class: "unmentioned" }, T.unmentioned) : null,
   );
 }
 
 function section(idx: number, key: keyof typeof T.sections, sec: SectionPlan, extra?: HTMLElement | null): HTMLElement {
   const main = sec.picks.filter((p) => p.group !== "listen");
   const listen = sec.picks.filter((p) => p.group === "listen");
-  return h("section", { class: "sec", id: `s-${key}`, "aria-labelledby": `h-${key}` },
-    h("h2", { class: "label", id: `h-${key}` }, h("span", { class: "num" }, `${ROMAN[idx]}.`), T.sections[key]),
-    sec.sentence ? h("p", { class: "sentence" }, sec.sentence) : null,
-    h("p", { class: "note" }, T.sectionLead[key]),
-    extra,
-    h("div", { class: "picks" }, ...main.map(pickCard)),
-    listen.length ? h("div", { class: "listen" }, h("h3", { class: "sub" }, T.listen), h("div", { class: "picks" }, ...listen.map(pickCard))) : null,
-    !main.length && !listen.length ? h("p", { class: "note" }, COPY.empty.nothingHere) : null,
+  return h("section", { class: "sec col", id: `s-${key}`, "aria-labelledby": `h-${key}` },
+    h("h2", { class: "label", id: `h-${key}` }, h("span", { class: "num" }, ROMAN[idx]), T.sections[key]),
+    h("div", { class: "body" },
+      sec.sentence ? h("p", { class: "sentence" }, sec.sentence) : null,
+      h("p", { class: "note" }, T.sectionLead[key]),
+      extra,
+      h("div", { class: "picks" }, ...main.map(pickCard)),
+      listen.length ? h("div", { class: "listen" }, h("h3", { class: "sub" }, T.listen), h("div", { class: "picks" }, ...listen.map(pickCard))) : null,
+      !main.length && !listen.length ? h("p", { class: "note" }, COPY.empty.nothingHere) : null,
+    ),
   );
 }
 
@@ -61,16 +60,19 @@ export function playlistText(plan: Plan): string {
 
 function programSection(plan: Plan): HTMLElement {
   const pr = plan.program;
-  return h("section", { class: "sec", id: "s-program", "aria-labelledby": "h-program" },
-    h("h2", { class: "label", id: "h-program" }, h("span", { class: "num" }, "VI."), T.sections.program),
-    pr.sentence ? h("p", { class: "sentence" }, pr.sentence) : null,
-    h("ol", { class: "order" }, ...pr.slots.map((s, i) => h("li", {},
-      h("span", { class: "o-label" }, s.label),
-      h("span", { class: "o-dots", "aria-hidden": "true" }),
-      h("span", { class: "o-detail" }, s.detail ?? ""),
-      s.note ? h("span", { class: "o-note" }, s.note) : null,
-    ))),
-    ...pr.notes.map((n) => h("p", { class: "note seated" }, n)),
+  return h("section", { class: "sec col", id: "s-program", "aria-labelledby": "h-program" },
+    h("h2", { class: "label", id: "h-program" }, h("span", { class: "num" }, "VI"), T.sections.program),
+    h("div", { class: "body" },
+      pr.sentence ? h("p", { class: "sentence" }, pr.sentence) : null,
+      h("p", { class: "note" }, T.sectionLead.program),
+      h("ol", { class: "order" }, ...pr.slots.map((s) => h("li", {},
+        h("span", { class: "o-label" }, s.label),
+        h("span", { class: "o-dots", "aria-hidden": "true" }),
+        h("span", { class: "o-detail" }, s.detail ?? ""),
+        s.note ? h("span", { class: "o-note" }, s.note) : null,
+      ))),
+      ...pr.notes.map((n) => h("p", { class: "note seated" }, n)),
+    ),
   );
 }
 
@@ -111,28 +113,31 @@ export function renderTribute(root: HTMLElement, v: RunView) {
   const btn = (label: string, fn: () => void, cls = "btn") => h("button", { type: "button", class: cls, onclick: fn }, label);
   const actions = h("div", { class: "actions no-print" },
     btn(T.print, () => window.print(), "btn primary"),
-    btn(T.copyLinks, async () => flash((await copyText(playlistText(plan))) ? T.copied : "")),
-    btn(T.share, async () => flash((await copyText(location.href)) ? T.copied : "")),
-    h("a", { class: "btn", href: "#/" }, T.startOver),
-    v.example ? btn(T.rebuild, async () => { try { const r = await rebuildExample(v.example!); location.hash = `#/t/${r.id}`; } catch (e: any) { flash(e.message); } }) : null,
+    btn(T.copyLinks, async () => flash((await copyText(playlistText(plan))) ? T.copied : ""), "btn quiet"),
+    btn(T.share, async () => flash((await copyText(location.href)) ? T.copied : ""), "btn quiet"),
+    h("a", { class: "btn quiet", href: "#/" }, T.startOver),
+    v.example ? btn(T.rebuild, async () => { try { const r = await rebuildExample(v.example!); location.hash = `#/t/${r.id}`; } catch (e: any) { flash(e.message); } }, "btn quiet") : null,
     toast,
   );
   const eras = plan.profile.eras.length
     ? h("p", { class: "eras" }, h("span", { class: "eras-label" }, T.eras), ...plan.profile.eras.map((d) => h("span", { class: "era" }, `${d}s`)))
     : null;
   const notes = plan.notes.length
-    ? h("aside", { class: "card changes" }, h("h2", { class: "label" }, T.notes), h("ul", {}, ...plan.notes.map((n) => h("li", {}, n))))
+    ? h("aside", { class: "changes" }, h("h2", { class: "label" }, T.notes), h("ul", {}, ...plan.notes.map((n) => h("li", {}, n))))
     : null;
   const page = h("div", { class: "page tribute" },
     h("header", { class: "t-head" },
-      h("p", { class: "kicker" }, plan.city),
-      h("h1", {}, plan.firstName ? T.forName(plan.firstName) : T.generic),
-      ornament(),
-      h("p", { class: "whylink no-print" }, h("a", { href: `#/why/${v.id}` }, T.why)),
-      v.notice ? h("p", { class: "note", role: "status" }, v.notice) : null,
-      actions,
+      plan.firstName ? h("h1", {}, `${T.forPrefix} `, h("span", { class: "who" }, plan.firstName)) : h("h1", {}, T.generic),
+      h("div", { class: "col" },
+        h("p", { class: "kicker" }, plan.city),
+        h("div", {},
+          h("p", { class: "whylink no-print" }, h("a", { href: `#/why/${v.id}` }, T.why), h("span", { class: "why-after" }, T.whyAfter)),
+          v.notice ? h("p", { class: "note", role: "status" }, v.notice) : null,
+          actions,
+          notes,
+        ),
+      ),
     ),
-    notes,
     section(0, "music", S.music),
     section(1, "readings", S.readings),
     section(2, "food", S.food),

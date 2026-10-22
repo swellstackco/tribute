@@ -12,5 +12,5 @@ export function h<K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<s
   for (const c of kids) if (c !== null && c !== undefined && c !== false) el.append(c instanceof Node ? c : document.createTextNode(c));
   return el;
 }
-export const ornament = () => h("div", { class: "orn", "aria-hidden": "true" }, h("span", { class: "dia" }));
+export const ornament = () => h("div", { class: "orn", "aria-hidden": "true" });
 export function clear(el: Element) { while (el.firstChild) el.removeChild(el.firstChild); }

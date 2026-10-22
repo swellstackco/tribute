@@ -5,11 +5,10 @@ const lum = (hex: string) => {
 };
 export const ratio = (a: string, b: string) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 const pairs: Array<[string, string, string]> = [
-  ["ink on paper", "#23201c", "#f7f2e8"], ["ink on card", "#23201c", "#fbf8f1"], ["muted on paper", "#554d44", "#f7f2e8"],
-  ["muted on card", "#554d44", "#fbf8f1"], ["green on paper", "#2e4a3a", "#f7f2e8"], ["green on card", "#2e4a3a", "#fbf8f1"],
-  ["white on green", "#ffffff", "#2e4a3a"], ["alert on paper", "#7a2c2c", "#f7f2e8"], ["ink on needs_input pill", "#23201c", "#efe3c2"],
-  ["placeholder on card", "#554d44", "#fbf8f1"],
+  ["ink on paper", "#1d1a16", "#f3eee4"], ["muted on paper", "#554c42", "#f3eee4"], ["rubric on paper", "#7b2a24", "#f3eee4"],
+  ["paper on ink", "#f3eee4", "#1d1a16"], ["paper on rubric", "#f3eee4", "#7b2a24"], ["placeholder on paper", "#554c42", "#f3eee4"],
+  ["rule-strong on paper (decorative, 3:1 is enough)", "#8f8371", "#f3eee4"],
 ];
 let fail = 0;
-for (const [n, a, b] of pairs) { const r = ratio(a, b); const ok = r >= 7; if (!ok) fail++; console.log(`${ok ? "PASS" : "FAIL"} ${r.toFixed(2)}:1  ${n}`); }
+for (const [n, a, b] of pairs) { const r = ratio(a, b); const ok = r >= (/decorative/.test(n) ? 3 : 7); if (!ok) fail++; console.log(`${ok ? "PASS" : "FAIL"} ${r.toFixed(2)}:1  ${n}`); }
 process.exit(fail ? 1 : 0);

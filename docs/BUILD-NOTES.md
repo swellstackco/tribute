@@ -67,3 +67,6 @@ Shape differences found and fixed:
 - Qloo 429s: retries raised to 3 with Retry-After; describe runs three loves at a time and tolerates one failed lookup.
 - A latent planner loop (repeated empty entity_tags calls when no love resolved) is fixed.
 Live: `go-live.sh` run, `/health` shows `"qloo":"live"`, examples re-seeded from real data. One live Haiku run (custom input, live Qloo) completed in 38 s for $0.0093. Total model spend recorded on the box: $0.038.
+
+## Design pass (2026-10-22)
+- Front end reset as a printed order of service: Newsreader (oldstyle figures, real small caps) plus Courier Prime for the working log; warm paper, deep ink, one rubric red; left marginal column with numerals; no cards, pills, ornaments or eyebrow labels. Tokens re-checked in `scripts/contrast.ts` (all text pairs 7:1 or better). Screens re-shot live with `SKIP_OWN=1`; ledger shot is from the local mock run.
